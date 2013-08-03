@@ -1,0 +1,7 @@
+fencername Domain
+actiontype Domain
+duration   time_duration (min:sec)
+time Datetime
+scored Boolean
+Sequence Integer
+

@@ -1,0 +1,13 @@
+<Screen>
+
+<Label type="Header" text="Received Touches by fencer pair"/>
+
+<Label type="SubHeader" text="Received Touches for %s versus %s">
+<Param seq="1" otype="String" ref="Fencername_1"/>
+<Param seq="2" otype="String" ref="Fencername_2"/>
+</Label>
+
+<Label type="InfoHeader" text="Count   |    Action"/>
+
+
+</Screen>

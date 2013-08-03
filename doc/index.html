@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+   <title>Athlete Data Analysis Beta Documentation</title>
+   <meta name="Description" content="Athlete Data Analysis Beta Documentation">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="robots" content="noindex,nofollow">
+</head>
+
+<BODY>
+<H1>Athlete Data Analysis Beta Documentation</H1>
+<ul>
+<li><a href="#Why">What ADA Does</a></li>
+<li><a href="#Install">Installing ADA</a></li>
+<li><a href="#Input">Gathering Data</a></li>
+<li><a href="#Output">Reporting on what you have found</a></li>
+<li><a href="#Hackery">Clearing the database and other tricks</a></li>
+</ul>
+
+<h2><a id="Why">What ADA Does</a></h2>
+<p>
+The Athlete Data Analysis application ("ADA") is designed to help fencers understand what happens during their bouts. By 
+using it to gather counts of actions which result in scored touches, you can understand what things you are doing work,
+and what things others do work against you.  This can help guide you in your training when you're not competing.
+</p>
+<h2><a id="Install">Installing ADA</a></h2>
+<p>
+Currently, ADA is available from <a href="http://tomshiro.org/ADA">the
+ADA beta test site</a>.  ADA is not currently on the Google Play
+Store, so you'll need to enable the <b>Unknown Sources</b> checkbox in
+your Android device's <b>Applications</b> or <b>Security</b> settings.
+After you've done this, you can put the beta URL into your phone's
+browser. Your browser will download the ADA package and put a message
+in your Android Notifications about it (the same place where your
+calendar puts reminders about things on your schedule).  Pull down the
+Notification screen and touch the ADA download notification to load
+the software.  If you get a message asking which software should
+handle the ADA.apk file, you want the <b>Android Package
+Installer</b>.
+</p>
+<h2><a id="Input">Gathering Data</a></h2>
+<p>
+When you start ADA by touching the ADA icon in your Applications screen, you will see the <b>root menu</b>, which
+consists of two buttons, as:<br/>
+</p>
+<p>
+<img src="Screenshots/Start.jpeg" alt="Opening Screen" height="440" width="220">
+</p>
+<p>
+Touch the <b>Input</b> button to bring up the input screen:<br/>
+</p>
+<p>
+<img src="Screenshots/Input.jpeg" alt="Input Screen" height="440" width="220">
+</p>
+<h3>At the start of the bout</h3>
+<p>
+Enter the names of the two fencers in the bout in the first pair of
+boxes.  You can type a name here if the fencer is new to the program,
+or touch the downarrow on the right side of the box to scroll through
+a list of names already in ADA's database.
+</p>
+<p>
+When the director or a fencer says ''ready, Fence'', start recording bout information by bringing up the <b>context menu</b> and touching the <b>Start Bout</b> button: <br/>
+</p>
+<p>
+<img src="Screenshots/Startbout.jpeg" alt="Start Bout" height="440" width="220">
+</p>
+<p>
+The <b>Context Menu</b> is the menu you can bring up in Android with
+the <b>menu</b> icon or button, typically indicated with a series of
+horizontal lines.  This records the time that the bout started in
+ADA's database, so that later you can ask ADA for things like ''How
+soon did the first touch occur when my fencer got it?''.
+</p>
+<h3>When a touch occurs</h3>
+<p>
+When one or both fencers score a touch, the action will stop.  When
+that happens, record what happened by touching the left or right (or
+both) <b>Scored</b> checkboxes on the <b>Input</b> screen, then using
+the spinners below the scoring checkboxes to choose what action
+precipitated the touch on each side:<br>
+</p>
+<p>
+<img src="Screenshots/Chooseaction.jpeg" alt="Choose Action" height="440" width="220">
+</p>
+<p>
+You can then press the <b>Commit</b> button at the bottom of the
+screen to add this touch to ADA's database. When you do this, ADA will
+update the score indicators above the left and right <b>Scored</b>
+checkboxes as appropriate, so that you can keep track of where you are
+in the bout.  You can also press the <b>Clear</b> button here if you
+or the director makes a mistake in the score or other entry. If your
+Android screen is longer than it is wide, you may be able to turn your
+phone sideways to make this screen a little more legible.
+</p>
+<h3>At the end of the bout</h3>
+<p>
+When the bout ends, bring up the <b>Context Menu</b> again and press
+either <b>New Bout</b> (to stay on <b>Input</b>)
+or <b>Finish</b> (to return to <b>root menu</b>). This will record
+the time that the bout finished, so you can later ask ADA questions
+like ''How long did winning bouts last for my fencer''?
+</p>
+<h2><a id="Output">Reporting on what you have found</a></h2>
+<p>
+ADA features an ad-hoc reporting facility which allows you to create
+reports on the data you have gathered without having to re-compile or
+edit the software itself.  I'll document how that works in a separate
+essay.  So far, I am shipping ADA with only a few configured reports,
+since I am still learning what might be most valuable to fencers and
+coaches.
+</p>
+
+<h3>Using a configured report</h3>
+<p>
+To run a report on the data you have collected, touch the <b>Report</b> button on ADA's <b>root menu</b>. This will bring up the <b>Report menu</b>, which consists of a spinner containing report names and a <b>Run</b> button.  Choose the report you wish to run and press <b>Run</b>:<br>
+</p>
+<p>
+<img src="Screenshots/Reportchoice.jpeg" alt="Choosing a report" height="440" width="220">
+</p>
+<p>
+This will bring up the <b>Report Configuration</b> screen, where you can pick the parameters for the report 
+which you wish to see:<br>
+<p>
+<img src="Screenshots/Reportconfig.jpeg" alt="Configuring your report" height="440" width="220">
+</p>
+<p>
+After you have selected your parameters, press the <b>Report</b> button to run your report:<br>
+</p>
+<p>
+<img src="Screenshots/Reportrun.jpeg" alt="Running a report" height="440" width="220">
+</p>
+<p>
+Press <b>Quit</b> to return to the <b>Report Configuration</b> screen, and <b>return</b> to go back to the <b>root menu</b>.
+
+<h2 <a id="Hackery">Clearing the database and other tricks</a></h2>
+<h3>ADA database</h3>
+<p>
+ADA keeps all of her database and report configuration files on your
+SD card, in a directory called <b>org.tomshiro.ada</b>. If you wish to
+clear the database, you can easily do so by mounting the SD card in
+your android device on a PC and removing or renaming
+the <b>org.tomshiro.ada/database/ada.db</b> file.  When you next run
+ADA, she will re-create this file with its contents as it was when you first ran the software.
+</p>
+<p>
+If you are feeling brave and you have some sql experience, you can
+also alter or add to the types of actions or do other operations on
+ADA's tables with the <b>sqlite3</b> command-line tool, available in
+most Linux repositories and possibly for Windows as well.  I would
+deeply like to know what things you'd like to change, so that I can
+incorporate your ideas into the next release of ADA.
+</p>
+<h3>ADA Reports</h3>
+<p>
+Configuration files for ADA's reports live in
+the <b>org.tomshiro.ada/reports</b> directory.  Each report consists
+of a subdirectory here. The name of the subdirectory is what appears
+in the <b>report menu</b> in ADA.  I have so far not documented the
+parameter files yet, but you're welcome to explore around in there.
+ADA does not contain much error-handling code for report files, so if
+you write a new report you may find that she will abend on simple
+errors. When the report format is stable, I will publish a lint(1)
+program for report parameter files to simplify writing them.
+</p>
+<h3>Known Troubles</h3>
+<p>
+This is <b>beta</b> software, so it probably has bugs and will crash in ways
+I am not aware of.  I do know that it will abend if you run it while
+your SD card is mounted to your computer, or if your SD card is out of
+your phone.  The next iteration of ADA will give a proper error and
+refuse to run under these circumstances.  I would like to know of
+other ways you can cause it to abend or work in unexpected ways.
+</p>
+</BODY>
+</HTML>

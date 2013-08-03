@@ -1,0 +1,17 @@
+<QueryInfo>
+<Query>
+select
+?,
+?,
+?,
+?,
+?
+from
+   Action_category
+</Query>
+<Param seq="1" ref="A_Fencer_name"/>
+<Param seq="2" ref="An_Action_type"/>
+<Param seq="3" ref="A_Number"/>
+<Param seq="4" ref="A_Boolean"/>
+<Param seq="5" ref="A_Duration" />
+</QueryInfo>

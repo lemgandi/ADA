@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/org.tomshiro.ada"
+    android:id="@+id/inputForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/LFencerLabel"
+          android:layout_weight="0"/>
+      
+      <org.tomshiro.ada.ComboBox
+        android:id="@+id/Left_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        custom:internalId="@+id/ComboboxTextboxIdLeft"
+               />
+      </TableRow>
+<TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/RFencerLabel"
+          android:layout_weight="0"/>
+    <org.tomshiro.ada.ComboBox
+        android:id="@+id/Right_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        custom:internalId="@+id/ComboboxTextboxIdRight"
+        />
+        
+    </TableRow>
+            
+        
+    <TableRow    	
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="0.5">
+    	<TextView
+    	    android:id="@+id/DisplayScoreLeft"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="0.5"
+    	    android:textAppearance="?android:attr/textAppearanceLarge" 
+    	/>
+    	    	
+    	 <TextView
+    	     android:id="@+id/DisplayScoreRight"
+    	     android:layout_width="fill_parent"
+    	     android:layout_height="wrap_content"
+    	     android:layout_weight="0.2"
+    	     android:textAppearance="?android:attr/textAppearanceLarge" />
+    	     />    	     
+	</TableRow>
+     
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" >
+
+			<CheckBox
+			    android:id="@+id/left_score_checkbox"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="0.5"
+			    android:text="@string/scorebuttonlabel"
+			    
+			    />
+
+            <CheckBox
+                android:id="@+id/right_score_checkbox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/scorebuttonlabel"
+                                
+                />
+
+        </TableRow>
+
+        <TableRow            
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" 
+            android:layout_weight="0.3"
+            >
+
+    <Spinner
+        android:id="@+id/Left_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
+            
+        <Spinner
+            android:id="@+id/Right_action"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    
+        </TableRow>
+
+        <TableRow           
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" 
+            android:layout_weight="0.3"
+            >
+        
+            <Button
+                android:id="@+id/CommitButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/commitbuttonlabel"
+                android:onClick="onCommitClick" />
+            
+			<Button
+			    android:id="@+id/ClearButton"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="0.5"
+			    android:text="@string/clearbuttonlabel"
+			    android:onClick="onClearClick" />
+			
+		            
+        </TableRow>
+
+        
+    </TableLayout>
+
+</LinearLayout>

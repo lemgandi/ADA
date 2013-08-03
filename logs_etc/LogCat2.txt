@@ -1,0 +1,67 @@
+06-27 11:37:35.733: D/AdaDB(1586): Created
+06-27 11:37:35.733: D/InputActivity(1586): loadSpinner
+06-27 11:37:35.733: D/AdaDB(1586): runListQuery
+06-27 11:37:35.757: D/InputActivity(1586): loadSpinner
+06-27 11:37:35.757: D/AdaDB(1586): runListQuery
+06-27 11:37:35.772: D/AdaDB(1586): runListQuery
+06-27 11:37:35.788: D/AdaDB(1586): runListQuery
+06-27 11:37:43.296: D/dalvikvm(1586): GC_FOR_MALLOC freed 5248 objects / 271568 bytes in 48ms
+06-27 11:37:54.288: D/InputActivity(1586): isFirstTouch
+06-27 11:37:54.296: D/InputActivity(1586): isFirstTouch: retVal=true
+06-27 11:37:54.296: D/AdaDB(1586): find_fencer
+06-27 11:37:54.311: D/AdaDB(1586): find_fencer
+06-27 11:37:54.327: D/AdaDB(1586): createBout
+06-27 11:37:54.358: D/AdaDB(1586): createBout RetVal:16
+06-27 11:37:54.358: D/InputActivity(1586): which_scored
+06-27 11:37:54.366: D/InputActivity(1586): insert_touches
+06-27 11:37:54.366: D/InputActivity(1586):  lTouchScored:true rTouchScored:false lTouchActionSeq:1 rTouchActionSeq:3 touch_sequence:1
+06-27 11:37:54.366: D/AdaDB(1586): add_touch
+06-27 11:37:59.600: D/AdaDB(1586): Created
+06-27 11:37:59.600: D/InputActivity(1586): loadSpinner
+06-27 11:37:59.600: D/AdaDB(1586): runListQuery
+06-27 11:37:59.632: D/InputActivity(1586): loadSpinner
+06-27 11:37:59.639: D/AdaDB(1586): runListQuery
+06-27 11:37:59.671: D/AdaDB(1586): runListQuery
+06-27 11:37:59.710: D/AdaDB(1586): runListQuery
+06-27 11:38:13.811: D/dalvikvm(1586): GC_FOR_MALLOC freed 7112 objects / 340936 bytes in 53ms
+06-27 11:38:13.850: E/Cursor(1586): Finalizing a Cursor that has not been deactivated or closed. database = /data/data/org.tomshiro.ada/databases/ada.db, table = null, query = select _id from Bout where lfencerfk = (select _id from Fencer where fencername = ?) and rfencerfk =
+06-27 11:38:13.850: E/Cursor(1586): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+06-27 11:38:13.850: E/Cursor(1586): 	at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1315)
+06-27 11:38:13.850: E/Cursor(1586): 	at org.tomshiro.ada.AdaDB.createBout(AdaDB.java:59)
+06-27 11:38:13.850: E/Cursor(1586): 	at org.tomshiro.ada.InputActivity.createBout(InputActivity.java:128)
+06-27 11:38:13.850: E/Cursor(1586): 	at org.tomshiro.ada.InputActivity.onCommitClick(InputActivity.java:201)
+06-27 11:38:13.850: E/Cursor(1586): 	at java.lang.reflect.Method.invokeNative(Native Method)
+06-27 11:38:13.850: E/Cursor(1586): 	at java.lang.reflect.Method.invoke(Method.java:521)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.view.View$1.onClick(View.java:2067)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.view.View.performClick(View.java:2408)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.view.View$PerformClick.run(View.java:8816)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.os.Handler.handleCallback(Handler.java:587)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.os.Looper.loop(Looper.java:123)
+06-27 11:38:13.850: E/Cursor(1586): 	at android.app.ActivityThread.main(ActivityThread.java:4627)
+06-27 11:38:13.850: E/Cursor(1586): 	at java.lang.reflect.Method.invokeNative(Native Method)
+06-27 11:38:13.850: E/Cursor(1586): 	at java.lang.reflect.Method.invoke(Method.java:521)
+06-27 11:38:13.850: E/Cursor(1586): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:858)
+06-27 11:38:13.850: E/Cursor(1586): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+06-27 11:38:13.850: E/Cursor(1586): 	at dalvik.system.NativeStart.main(Native Method)
+06-27 11:38:15.124: I/dalvikvm(1586): Jit: resizing JitTable from 4096 to 8192
+06-27 11:38:18.514: D/InputActivity(1586): isFirstTouch
+06-27 11:38:18.514: D/InputActivity(1586): isFirstTouch: retVal=true
+06-27 11:38:18.514: D/AdaDB(1586): find_fencer
+06-27 11:38:18.546: D/AdaDB(1586): find_fencer
+06-27 11:38:18.561: D/AdaDB(1586): createBout
+06-27 11:38:18.585: D/AdaDB(1586): createBout RetVal:17
+06-27 11:38:18.585: D/InputActivity(1586): which_scored
+06-27 11:38:18.585: D/InputActivity(1586): insert_touches
+06-27 11:38:18.585: D/InputActivity(1586):  lTouchScored:false rTouchScored:true lTouchActionSeq:2 rTouchActionSeq:1 touch_sequence:1
+06-27 11:38:18.585: D/AdaDB(1586): add_touch
+06-27 11:38:21.928: D/AdaDB(1586): Created
+06-27 11:38:21.928: D/InputActivity(1586): loadSpinner
+06-27 11:38:21.928: D/AdaDB(1586): runListQuery
+06-27 11:38:21.960: D/InputActivity(1586): loadSpinner
+06-27 11:38:21.960: D/AdaDB(1586): runListQuery
+06-27 11:38:21.999: D/AdaDB(1586): runListQuery
+06-27 11:38:22.030: D/AdaDB(1586): runListQuery

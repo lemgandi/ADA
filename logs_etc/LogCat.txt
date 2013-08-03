@@ -1,0 +1,945 @@
+?:??: W/?(?): --------- beginning of /dev/log/main
+06-27 10:30:50.289: I/DEBUG(1010): debuggerd: Sep 14 2011 06:30:26
+06-27 10:30:50.367: V/mdm_panicd(1021): Enter mdm_panicd
+06-27 10:30:50.367: V/mdm_panicd(1021): open /dev/omap_mdm_ctrl | fd (7)
+06-27 10:30:50.367: V/mdm_panicd(1021): Monitoring for modem reset
+06-27 10:30:50.390: E/RDS(1021): RdsSetupRemoteConnection: connect FAILED 111
+06-27 10:30:50.390: E/mdm_panicd(1021): establish_rds_link() : Unable to connect to RDS Socket
+06-27 10:30:50.390: E/mdm_panicd(1021): --------- beginning of /dev/log/system
+06-27 10:30:50.484: I/Vold(1008): Vold 2.1 (the revenge) firing up
+06-27 10:30:50.508: I/Netd(1009): Netd 1.0 starting
+06-27 10:30:50.562: D/Vold(1008): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+06-27 10:30:50.633: I/BATTD(1019): Battd USB INSERT = Success
+06-27 10:30:50.703: I/BATTD(1019): Battd Init = Success
+06-27 10:30:50.703: I/BATTD(1019): RTC Log SBCM Init=1372347050706
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE: BATT DATA READ - SUCCESS
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE: BATT DATA READ - SUCCESS
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE: BATT DATA READ - SUCCESS
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE: BATT DATA RETRIVAL SUCCESS
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE: CutOff Threshold is 3050 mV
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE_EVENT_INIT=Initialization
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE ****Battery Timing start ****
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE ****Battery Phasing start ****
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE offset_batti = -1
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE slope_batti = 128
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE offset_chrgi = 0
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE slope_chrgi = 125
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE offset_battp = 17
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE slope_battp = 128
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE offset_bp = 0
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE slope_bp = 128
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE offset_battt = 3
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE slope_battt = 129
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE offset_chrgv = 4
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE slope_chrgv = 127
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE ****Battery Phasing end ****
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp safe = 323
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp warn = 328
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp cool = 331
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp phased safe raw = 0x69
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp phased warn raw = 0x59
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp phased cool raw = 0x51
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp safe unphased raw = 0x65
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp warn unphased raw = 0x55
+06-27 10:30:50.703: I/BATTD(1019): SBCM_GLUE temp cool unphased raw = 0x4d
+06-27 10:30:50.734: I/BATTD(1019): Coulomb Counter Enabled=1
+06-27 10:30:50.734: I/BATTD(1019): SBCM_ALGORITHM_task_handler()return=686979
+06-27 10:30:50.734: I/BATTD(1019): while(SBCM_GLUE_atod_pending)=2
+06-27 10:30:50.742: I/BATTD(1019): SBCM_ALGORITHM_task_handler()return=0xA7BBD
+06-27 10:30:50.742: I/BATTD(1019): while(SBCM_GLUE_atod_pending)=4
+06-27 10:30:50.742: I/BATTD(1019): File /data/cc_data opened!
+06-27 10:30:50.742: I/BATTD(1019): Value from cc file Percentage = 993483222
+06-27 10:30:50.773: I/BATTD(1019): SBCM_ALGORITHM_task_handler()return=0xA7B81
+06-27 10:30:50.773: I/BATTD(1019): Timeout=10
+06-27 10:30:50.789: I/BATTD(1019): set_charge_current=0
+06-27 10:30:50.805: I/recovery(1032): Recovery image already installed 
+06-27 10:30:50.875: I/BATTD(1019): SBCM_GLUE ****Battery BRT Read ****
+06-27 10:30:51.008: D/Vold(1008): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+06-27 10:30:51.008: D/Vold(1008): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+06-27 10:30:51.656: D/AndroidRuntime(1012): >>>>>>>>>>>>>> AndroidRuntime START <<<<<<<<<<<<<<
+06-27 10:30:51.680: D/AndroidRuntime(1012): CheckJNI is OFF
+06-27 10:30:51.711: D/dalvikvm(1012): creating instr width table
+06-27 10:30:51.976: I/(1013): ServiceManager: 0xacd0
+06-27 10:30:51.976: E/AudioPostProcessor(1013): AudioMgr Error:Failed to open gains file /data/ap_gain.bin
+06-27 10:30:51.976: E/AudioPostProcessor(1013): AudioMgr Error:Failed to  read gains/coeffs from /data 
+06-27 10:30:51.992: E/AudioPostProcessor(1013): Audio coeffs init success. 
+06-27 10:30:51.992: I/CameraService(1013): CameraService started: pid=1013
+06-27 10:30:52.008: D/Audio_Unsolicited(1013): in readyToRun
+06-27 10:30:52.008: D/Audio_Unsolicited(1013): Create socket successful 13 
+06-27 10:30:52.008: I/AudioFlinger(1013): AudioFlinger's thread 0x11c48 ready to run
+06-27 10:30:52.242: D/AndroidRuntime(1012): --- registering native functions ---
+06-27 10:30:52.812: I/SamplingProfilerIntegration(1012): Profiler is disabled.
+06-27 10:30:52.828: I/Zygote(1012): Preloading classes...
+06-27 10:30:52.828: E/Zygote(1012): setreuid() failed. errno: 2
+06-27 10:30:52.836: D/dalvikvm(1012): GC_EXPLICIT freed 819 objects / 47368 bytes in 3ms
+06-27 10:30:52.930: I/BATTD(1019): SBCM_GLUE ****BRT SUCCESS****
+06-27 10:30:52.930: I/BATTD(1019): BM_BATT_DATA: status valid
+06-27 10:30:52.930: I/BATTD(1019): BM_BATT_DATA: uid valid
+06-27 10:30:52.930: I/BATTD(1019): BM_BATT_DATA: family_code = 137
+06-27 10:30:52.930: I/BATTD(1019): BM_BATT_DATA: uid_lsb = 0
+06-27 10:30:52.930: I/BATTD(1019): BM_BATT_DATA: uid_msb = 80
+06-27 10:30:52.930: I/BATTD(1019): BM_BATT_DATA: page_2_checksum = 0
+06-27 10:30:52.930: I/BATTD(1019): BM_BATT_DATA: page_3_checksum = 0
+06-27 10:30:52.930: I/BATTD(1019): BM_BATT_DATA: cpyrght_vld = 1
+06-27 10:30:52.930: I/BATTD(1019): SBCM CORE convert_rom_data: bcap= 1430, raw= 0x8f
+06-27 10:30:52.930: I/BATTD(1019): BATTD_SetBattCapacity BATT CAP = 187442
+06-27 10:30:52.930: I/BATTD(1019): SBCM_GLUE BATT CAP = 1430
+06-27 10:30:52.930: I/BATTD(1019): set_charge_current=0
+06-27 10:30:52.930: I/BATTD(1019): Battd USB INSERT = Success
+06-27 10:30:52.930: I/BATTD(1019): Battd USB INSERT = Success
+06-27 10:30:53.094: D/dalvikvm(1012): GC_EXPLICIT freed 219 objects / 13592 bytes in 3ms
+06-27 10:30:53.109: I/BATTD(1019): Event from SBCM Driver=Coulomb Counter Calibration Interrupt
+06-27 10:30:53.125: I/bluetooth_ScoSocket.cpp(1012): Entry name = MY-CAR ScoTypes = 0x7f
+06-27 10:30:53.125: I/bluetooth_ScoSocket.cpp(1012): Entry name = Motorola HF850 ScoTypes = 0x7
+06-27 10:30:53.140: D/dalvikvm(1012): GC_EXPLICIT freed 253 objects / 14328 bytes in 4ms
+06-27 10:30:53.172: D/dalvikvm(1012): GC_EXPLICIT freed 466 objects / 28824 bytes in 4ms
+06-27 10:30:53.289: D/dalvikvm(1012): GC_EXPLICIT freed 2090 objects / 108336 bytes in 5ms
+06-27 10:30:53.414: I/BATTD(1019): set_charge_voltage=4200
+06-27 10:30:53.414: I/BATTD(1019): set_charge_current=0
+06-27 10:30:53.414: I/BATTD(1019): set_charge_voltage=4200
+06-27 10:30:53.414: I/BATTD(1019): set_charge_current=500
+06-27 10:30:53.430: D/dalvikvm(1012): GC_EXPLICIT freed 279 objects / 15968 bytes in 6ms
+06-27 10:30:53.601: D/dalvikvm(1012): GC_FOR_MALLOC freed 5094 objects / 226256 bytes in 11ms
+06-27 10:30:53.945: D/dalvikvm(1012): GC_FOR_MALLOC freed 11247 objects / 381128 bytes in 14ms
+06-27 10:30:54.086: D/dalvikvm(1012): GC_FOR_MALLOC freed 9789 objects / 461744 bytes in 16ms
+06-27 10:30:54.219: D/dalvikvm(1012): GC_FOR_MALLOC freed 8680 objects / 420472 bytes in 17ms
+06-27 10:30:54.414: D/dalvikvm(1012): GC_FOR_MALLOC freed 7612 objects / 458840 bytes in 18ms
+06-27 10:30:54.586: D/dalvikvm(1012): GC_FOR_MALLOC freed 7463 objects / 456576 bytes in 18ms
+06-27 10:30:54.789: D/dalvikvm(1012): GC_FOR_MALLOC freed 8632 objects / 513848 bytes in 19ms
+06-27 10:30:54.992: D/dalvikvm(1012): GC_FOR_MALLOC freed 7530 objects / 485440 bytes in 20ms
+06-27 10:30:55.031: D/dalvikvm(1012): GC_EXPLICIT freed 174 objects / 9232 bytes in 16ms
+06-27 10:30:55.125: D/dalvikvm(1012): GC_EXPLICIT freed 598 objects / 29224 bytes in 17ms
+06-27 10:30:55.156: D/dalvikvm(1012): GC_EXPLICIT freed 449 objects / 25272 bytes in 18ms
+06-27 10:30:55.281: D/dalvikvm(1012): GC_EXPLICIT freed 306 objects / 35056 bytes in 25ms
+06-27 10:30:55.336: D/dalvikvm(1012): GC_EXPLICIT freed 279 objects / 19040 bytes in 25ms
+06-27 10:30:55.391: V/rdsutil(1021): send_rds_async( 8, 10000 )
+06-27 10:30:55.391: V/rdsutil(1021): recv_rds( 8, 10000 ) : Response msgType=2 isSuccess=1
+06-27 10:30:55.391: I/mdm_panicd(1021): establish_rds_link(): subscribed to RDS_MSG_ID_UNSOL_IPC_FAILURE
+06-27 10:30:55.391: I/mdm_panicd(1021): RDS Socket established gUnsolicitedFd = 8 
+06-27 10:30:55.640: D/dalvikvm(1012): GC_EXPLICIT freed 341 objects / 18488 bytes in 26ms
+06-27 10:30:55.750: D/dalvikvm(1012): GC_EXPLICIT freed 449 objects / 28296 bytes in 26ms
+06-27 10:30:56.242: D/dalvikvm(1012): GC_EXPLICIT freed 532 objects / 53272 bytes in 28ms
+06-27 10:30:56.297: D/dalvikvm(1012): GC_EXPLICIT freed 626 objects / 34112 bytes in 29ms
+06-27 10:30:56.351: D/dalvikvm(1012): GC_EXPLICIT freed 862 objects / 46888 bytes in 29ms
+06-27 10:30:56.437: D/dalvikvm(1012): GC_EXPLICIT freed 1745 objects / 85440 bytes in 30ms
+06-27 10:30:56.492: D/dalvikvm(1012): GC_EXPLICIT freed 454 objects / 29592 bytes in 30ms
+06-27 10:30:56.547: D/dalvikvm(1012): GC_EXPLICIT freed 317 objects / 20368 bytes in 30ms
+06-27 10:30:56.555: I/Zygote(1012): ...preloaded 1264 classes in 3727ms.
+06-27 10:30:56.555: E/Zygote(1012): setreuid() failed. errno: 17
+06-27 10:30:56.586: D/dalvikvm(1012): GC_EXPLICIT freed 102 objects / 13992 bytes in 30ms
+06-27 10:30:56.781: I/Zygote(1012): Preloading resources...
+06-27 10:30:56.844: D/dalvikvm(1012): GC_EXPLICIT freed 312 objects / 15568 bytes in 31ms
+06-27 10:30:56.875: W/Zygote(1012): Preloaded drawable resource #0x10801e8 (res/drawable-hdpi/jog_tab_bar_left_end_confirm_gray.9.png) that varies with configuration!!
+06-27 10:30:56.883: W/Zygote(1012): Preloaded drawable resource #0x10801ec (res/drawable-hdpi/jog_tab_bar_left_end_normal.9.png) that varies with configuration!!
+06-27 10:30:56.883: W/Zygote(1012): Preloaded drawable resource #0x10801ed (res/drawable-hdpi/jog_tab_bar_left_end_pressed.9.png) that varies with configuration!!
+06-27 10:30:56.883: W/Zygote(1012): Preloaded drawable resource #0x10801f1 (res/drawable-hdpi/jog_tab_bar_right_end_confirm_gray.9.png) that varies with configuration!!
+06-27 10:30:56.883: W/Zygote(1012): Preloaded drawable resource #0x10801f5 (res/drawable-hdpi/jog_tab_bar_right_end_normal.9.png) that varies with configuration!!
+06-27 10:30:56.883: W/Zygote(1012): Preloaded drawable resource #0x10801f6 (res/drawable-hdpi/jog_tab_bar_right_end_pressed.9.png) that varies with configuration!!
+06-27 10:30:56.914: D/dalvikvm(1012): GC_EXPLICIT freed 393 objects / 23984 bytes in 31ms
+06-27 10:30:56.914: W/Zygote(1012): Preloaded drawable resource #0x10801fb (res/drawable-hdpi/jog_tab_left_confirm_gray.png) that varies with configuration!!
+06-27 10:30:56.914: W/Zygote(1012): Preloaded drawable resource #0x1080200 (res/drawable-hdpi/jog_tab_left_normal.png) that varies with configuration!!
+06-27 10:30:56.914: W/Zygote(1012): Preloaded drawable resource #0x1080201 (res/drawable-hdpi/jog_tab_left_pressed.png) that varies with configuration!!
+06-27 10:30:56.914: W/Zygote(1012): Preloaded drawable resource #0x1080203 (res/drawable-hdpi/jog_tab_right_confirm_gray.png) that varies with configuration!!
+06-27 10:30:56.914: W/Zygote(1012): Preloaded drawable resource #0x1080209 (res/drawable-hdpi/jog_tab_right_normal.png) that varies with configuration!!
+06-27 10:30:56.922: W/Zygote(1012): Preloaded drawable resource #0x108020a (res/drawable-hdpi/jog_tab_right_pressed.png) that varies with configuration!!
+06-27 10:30:56.922: W/Zygote(1012): Preloaded drawable resource #0x108020d (res/drawable-hdpi/jog_tab_target_gray.png) that varies with configuration!!
+06-27 10:30:56.922: I/Zygote(1012): ...preloaded 61 resources in 141ms.
+06-27 10:30:56.930: I/Zygote(1012): ...preloaded 15 resources in 6ms.
+06-27 10:30:56.961: D/dalvikvm(1012): GC_EXPLICIT freed 339 objects / 20752 bytes in 31ms
+06-27 10:30:56.992: D/dalvikvm(1012): GC_EXPLICIT freed 111 objects / 4360 bytes in 31ms
+06-27 10:30:57.023: D/dalvikvm(1012): GC_EXPLICIT freed 2 objects / 48 bytes in 30ms
+06-27 10:30:57.031: I/dalvikvm(1012): System server process 1096 has been created
+06-27 10:30:57.031: I/Zygote(1012): Accepting command socket connections
+06-27 10:30:57.156: I/sysproc(1096): Entered system_init()
+06-27 10:30:57.156: I/sysproc(1096): ServiceManager: 0x134230
+06-27 10:30:57.156: I/SurfaceFlinger(1096): SurfaceFlinger is starting
+06-27 10:30:57.156: I/SurfaceFlinger(1096): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+06-27 10:30:57.203: D/libEGL(1096): loaded /system/lib/egl/libGLES_android.so
+06-27 10:30:57.211: D/libEGL(1096): loaded /system/lib/egl/libEGL_POWERVR_SGX530_121.so
+06-27 10:30:57.234: D/libEGL(1096): loaded /system/lib/egl/libGLESv1_CM_POWERVR_SGX530_121.so
+06-27 10:30:57.258: D/libEGL(1096): loaded /system/lib/egl/libGLESv2_POWERVR_SGX530_121.so
+06-27 10:30:57.305: I/SurfaceFlinger(1096): EGL informations:
+06-27 10:30:57.305: I/SurfaceFlinger(1096): # of configs : 30
+06-27 10:30:57.305: I/SurfaceFlinger(1096): vendor    : Android
+06-27 10:30:57.305: I/SurfaceFlinger(1096): version   : 1.4 Android META-EGL
+06-27 10:30:57.305: I/SurfaceFlinger(1096): extensions: EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_ANDROID_image_native_buffer EGL_ANDROID_swap_rectangle EGL_ANDROID_get_render_buffer 
+06-27 10:30:57.305: I/SurfaceFlinger(1096): Client API: OpenGL ES
+06-27 10:30:57.305: I/SurfaceFlinger(1096): EGLSurface: 8-8-8-8, config=0x1
+06-27 10:30:57.328: E/libEGL(1096): eglSetSwapRectangleANDROID:1759 error 3008 (EGL_BAD_DISPLAY)
+06-27 10:30:57.328: I/SurfaceFlinger(1096): flags     : 00110000
+06-27 10:30:57.344: I/SurfaceFlinger(1096): OpenGL informations:
+06-27 10:30:57.344: I/SurfaceFlinger(1096): vendor    : Imagination Technologies
+06-27 10:30:57.344: I/SurfaceFlinger(1096): renderer  : PowerVR SGX 530
+06-27 10:30:57.344: I/SurfaceFlinger(1096): version   : OpenGL ES-CM 1.1
+06-27 10:30:57.344: I/SurfaceFlinger(1096): extensions: GL_OES_byte_coordinates GL_OES_fixed_point GL_OES_single_precision GL_OES_matrix_get GL_OES_read_format GL_OES_compressed_paletted_texture GL_OES_point_sprite GL_OES_point_size_array GL_OES_matrix_palette GL_OES_draw_texture GL_OES_query_matrix GL_OES_texture_env_crossbar GL_OES_texture_mirrored_repeat GL_OES_texture_cube_map GL_OES_blend_subtract GL_OES_blend_func_separate GL_OES_blend_equation_separate GL_OES_stencil_wrap GL_OES_extended_matrix_palette GL_OES_framebuffer_object GL_OES_rgb8_rgba8 GL_OES_depth24 GL_OES_stencil8 GL_OES_compressed_ETC1_RGB8_texture GL_OES_mapbuffer GL_OES_EGL_image GL_EXT_multi_draw_arrays GL_OES_required_internalformat GL_IMG_read_format GL_IMG_texture_compression_pvrtc GL_IMG_texture_format_BGRA8888 GL_EXT_texture_format_BGRA8888 GL_IMG_texture_stream GL_IMG_vertex_program 
+06-27 10:30:57.344: I/SurfaceFlinger(1096): GL_MAX_TEXTURE_SIZE = 2048
+06-27 10:30:57.344: I/SurfaceFlinger(1096): GL_MAX_VIEWPORT_DIMS = 2048
+06-27 10:30:57.344: I/sysproc(1096): System server: starting Android runtime.
+06-27 10:30:57.344: I/sysproc(1096): System server: starting Android services.
+06-27 10:30:57.344: I/SystemServer(1096): Entered the Android system server!
+06-27 10:30:57.359: I/sysproc(1096): System server: entering thread pool.
+06-27 10:30:57.359: I/SystemServer(1096): Entropy Service
+06-27 10:30:57.383: I/SystemServer(1096): Power Manager
+06-27 10:30:57.398: I/SystemServer(1096): Activity Manager
+06-27 10:30:57.437: I/ActivityManager(1096): Memory class: 24
+06-27 10:30:57.461: D/libEGL(1105): loaded /system/lib/egl/libGLES_android.so
+06-27 10:30:57.469: E/SurfaceFlinger(1096): eglSwapBuffers: EGL error 0x3008 (EGL_BAD_DISPLAY)
+06-27 10:30:57.469: D/libEGL(1105): loaded /system/lib/egl/libEGL_POWERVR_SGX530_121.so
+06-27 10:30:57.469: D/libEGL(1105): loaded /system/lib/egl/libGLESv1_CM_POWERVR_SGX530_121.so
+06-27 10:30:57.484: D/libEGL(1105): loaded /system/lib/egl/libGLESv2_POWERVR_SGX530_121.so
+06-27 10:30:57.625: W/zipro(1105): Unable to open zip '/data/local/bootanimation.zip': No such file or directory
+06-27 10:30:57.648: I/UsageStats(1096): Deleting usage file : usage-20130611
+06-27 10:30:57.859: D/dalvikvm(1096): GC_FOR_MALLOC freed 3170 objects / 229248 bytes in 80ms
+06-27 10:30:57.937: I/SystemServer(1096): Telephony Registry
+06-27 10:30:57.937: I/SystemServer(1096): Package Manager
+06-27 10:30:57.945: I/Installer(1096): connecting...
+06-27 10:30:57.953: I/installd(1015): new connection
+06-27 10:30:58.031: I/PackageManager(1096): Libs: android.test.runner:/system/framework/android.test.runner.jar javax.obex:/system/framework/javax.obex.jar com.google.android.maps:/system/framework/com.google.android.maps.jar
+06-27 10:30:58.031: I/PackageManager(1096): Features: android.hardware.wifi android.hardware.location.network com.google.android.feature.GOOGLE_BUILD android.hardware.telephony android.hardware.location com.google.android.feature.GOOGLE_PLUGIN android.hardware.touchscreen.multitouch android.hardware.sensor.compass android.hardware.camera android.hardware.bluetooth android.hardware.touchscreen.multitouch.distinct android.hardware.sensor.proximity android.hardware.microphone android.hardware.sensor.light android.hardware.location.gps android.hardware.camera.autofocus android.hardware.telephony.cdma android.hardware.sensor.accelerometer android.hardware.touchscreen android.software.live_wallpaper android.hardware.camera.flash
+06-27 10:30:58.164: D/dalvikvm(1096): GC_FOR_MALLOC freed 5283 objects / 214504 bytes in 75ms
+06-27 10:30:58.531: D/PackageManager(1096): Scanning app dir /system/framework
+06-27 10:30:58.625: D/dalvikvm(1096): GC_FOR_MALLOC freed 8859 objects / 596560 bytes in 86ms
+06-27 10:30:58.726: D/PackageManager(1096): Scanning app dir /system/app
+06-27 10:30:59.515: D/dalvikvm(1096): GC_FOR_MALLOC freed 4926 objects / 260520 bytes in 85ms
+06-27 10:30:59.531: I/PackageParser(1096): com.google.android.marvin.soundback: compat added android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE
+06-27 10:30:59.570: W/PackageParser(1096): No actions in intent filter at /system/app/Bluetooth.apk Binary XML file line #124
+06-27 10:30:59.773: I/PackageParser(1096): com.facebook.katana: compat added android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE
+06-27 10:31:00.375: D/dalvikvm(1096): GC_FOR_MALLOC freed 5516 objects / 300152 bytes in 87ms
+06-27 10:31:01.320: D/dalvikvm(1096): GC_FOR_MALLOC freed 6178 objects / 331152 bytes in 88ms
+06-27 10:31:02.726: D/dalvikvm(1096): GC_FOR_MALLOC freed 6855 objects / 372144 bytes in 63ms
+06-27 10:31:02.812: I/PackageParser(1096): com.google.android.marvin.kickback: compat added android.permission.WRITE_EXTERNAL_STORAGE android.permission.READ_PHONE_STATE
+06-27 10:31:02.828: D/PackageManager(1096): Scanning app dir /data/app
+06-27 10:31:02.836: D/PackageManager(1096): Scanning app dir /data/app-private
+06-27 10:31:02.844: I/PackageManager(1096): Time to scan packages: 4.358 seconds
+06-27 10:31:02.844: W/PackageManager(1096): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+06-27 10:31:02.851: W/PackageManager(1096): Unknown permission com.google.android.providers.gmail.permission.WRITE_GMAIL in package com.qo.android.gep
+06-27 10:31:02.851: W/PackageManager(1096): Unknown permission com.google.android.providers.gmail.permission.READ_GMAIL in package com.qo.android.gep
+06-27 10:31:02.851: W/PackageManager(1096): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.motorola.hiddenmenu
+06-27 10:31:02.851: W/PackageManager(1096): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x1be45)
+06-27 10:31:02.859: W/PackageManager(1096): Not granting permission android.permission.DEVICE_POWER to package com.google.android.deskclock (protectionLevel=2 flags=0xbe45)
+06-27 10:31:02.859: W/PackageManager(1096): Unknown permission com.google.android.voicesearch.SHORTCUTS_ACCESS in package com.google.android.googlequicksearchbox
+06-27 10:31:02.859: W/PackageManager(1096): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.vending (protectionLevel=2 flags=0x2be05)
+06-27 10:31:02.859: W/PackageManager(1096): Unknown permission android.permission.SEND in package com.android.vending
+06-27 10:31:02.867: W/PackageManager(1096): Unknown permission android.permission.DIAL in package com.motorola.calendar
+06-27 10:31:02.867: W/PackageManager(1096): Unknown permission com.google.android.voicesearch.AUDIO_FILE_ACCESS in package com.google.android.gm
+06-27 10:31:02.867: W/PackageManager(1096): Unknown permission com.android.providers.im.permission.READ_ONLY in package com.google.android.apps.maps
+06-27 10:31:03.078: D/dalvikvm(1096): GC_EXPLICIT freed 7100 objects / 428504 bytes in 72ms
+06-27 10:31:03.078: I/SystemServer(1096): Account Manager
+06-27 10:31:03.140: I/SystemServer(1096): Content Manager
+06-27 10:31:03.211: I/ActivityThread(1096): Publishing provider settings: com.android.providers.settings.SettingsProvider
+06-27 10:31:03.211: I/SystemServer(1096): System Content Providers
+06-27 10:31:03.242: I/SystemServer(1096): Battery Service
+06-27 10:31:03.250: I/SystemServer(1096): Lights Service
+06-27 10:31:03.250: I/SystemServer(1096): Vibrator Service
+06-27 10:31:03.281: I/SystemServer(1096): Alarm Manager
+06-27 10:31:03.289: I/SystemServer(1096): Init Watchdog
+06-27 10:31:03.289: I/SystemServer(1096): Sensor Service
+06-27 10:31:03.289: I/SystemServer(1096): Window Manager
+06-27 10:31:03.305: I/EventHub(1096): New device: path=/dev/input/event6 name=lm3530_led id=0x10000 (of 0x1) index=1 fd=53 classes=0x0
+06-27 10:31:03.305: I/EventHub(1096): ignoring event id /dev/input/event5 driver proximity
+06-27 10:31:03.312: I/EventHub(1096): New keyboard: device->id=0x10001 devname='sholes-keypad' propName='hw.keyboards.65537.devname' keylayout='/system/usr/keylayout/sholes-keypad.kl'
+06-27 10:31:03.312: I/EventHub(1096): New device: path=/dev/input/event4 name=sholes-keypad id=0x10001 (of 0x2) index=2 fd=54 classes=0x23
+06-27 10:31:03.312: I/EventHub(1096): New keyboard: device->id=0x10002 devname='qtouch-touchscreen' propName='hw.keyboards.65538.devname' keylayout='/system/usr/keylayout/qwerty.kl'
+06-27 10:31:03.312: I/EventHub(1096): New device: path=/dev/input/event3 name=qtouch-touchscreen id=0x10002 (of 0x3) index=3 fd=55 classes=0x15
+06-27 10:31:03.312: I/EventHub(1096): New keyboard: device->id=0x10003 devname='cpcap-key' propName='hw.keyboards.65539.devname' keylayout='/system/usr/keylayout/cpcap-key.kl'
+06-27 10:31:03.312: I/EventHub(1096): New device: path=/dev/input/event2 name=cpcap-key id=0x10003 (of 0x4) index=4 fd=56 classes=0x1
+06-27 10:31:03.312: I/EventHub(1096): ignoring event id /dev/input/event1 driver accelerometer
+06-27 10:31:03.312: I/EventHub(1096): ignoring event id /dev/input/event0 driver compass
+06-27 10:31:03.312: I/KeyInputQueue(1096): Device added: id=0x10003, name=cpcap-key, classes=1
+06-27 10:31:03.312: I/KeyInputQueue(1096): Device added: id=0x10002, name=qtouch-touchscreen, classes=15
+06-27 10:31:03.312: I/KeyInputQueue(1096):   X: min=20 max=1004 flat=0 fuzz=0
+06-27 10:31:03.320: I/KeyInputQueue(1096):   Y: min=0 max=960 flat=0 fuzz=0
+06-27 10:31:03.320: I/KeyInputQueue(1096):   Pressure: min=0 max=255 flat=0 fuzz=2
+06-27 10:31:03.320: I/KeyInputQueue(1096):   Size: min=0 max=15 flat=0 fuzz=2
+06-27 10:31:03.320: I/KeyInputQueue(1096): Device added: id=0x0, name=sholes-keypad, classes=23
+06-27 10:31:03.320: I/KeyInputQueue(1096): Ignoring non-input device: id=0x10000, name=lm3530_led
+06-27 10:31:03.351: I/SystemServer(1096): Bluetooth Service
+06-27 10:31:03.375: I/SystemServer(1096): Device Policy
+06-27 10:31:03.383: I/SystemServer(1096): Status Bar
+06-27 10:31:03.430: I/SystemServer(1096): Clipboard Service
+06-27 10:31:03.430: I/SystemServer(1096): Input Method Service
+06-27 10:31:03.445: I/InputManagerService(1096): Enabled input methods: com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+06-27 10:31:03.445: I/SystemServer(1096): NetStat Service
+06-27 10:31:03.453: I/SystemServer(1096): NetworkManagement Service
+06-27 10:31:03.453: I/SystemServer(1096): Connectivity Service
+06-27 10:31:03.453: V/ConnectivityService(1096): ConnectivityService starting up
+06-27 10:31:03.461: D/ConnectivityService(1096): getMobileDataEnabled returning true
+06-27 10:31:03.469: V/ConnectivityService(1096): Starting Wifi Service.
+06-27 10:31:03.484: I/WifiService(1096): WifiService starting up with Wi-Fi enabled
+06-27 10:31:03.500: D/Tethering(1096): Tethering starting
+06-27 10:31:03.500: D/NetworkManagmentService(1096): Registering observer
+06-27 10:31:03.508: I/SystemServer(1096): Throttle Service
+06-27 10:31:03.508: I/SystemServer(1096): Accessibility Manager
+06-27 10:31:03.508: I/SystemServer(1096): Mount Service
+06-27 10:31:03.515: I/SystemServer(1096): Notification Manager
+06-27 10:31:03.617: D/dalvikvm(1096): GC_FOR_MALLOC freed 3782 objects / 239008 bytes in 100ms
+06-27 10:31:03.633: I/PackageManager(1096): Updating external media status from unmounted to unmounted
+06-27 10:31:03.633: D/VoldCmdListener(1008): volume list
+06-27 10:31:03.640: I/SystemServer(1096): Device Storage Monitor
+06-27 10:31:03.656: D/VoldCmdListener(1008): share status ums
+06-27 10:31:03.656: I/SystemServer(1096): Location Manager
+06-27 10:31:03.656: I/SystemServer(1096): Search Service
+06-27 10:31:03.656: I/SystemServer(1096): DropBox Service
+06-27 10:31:03.664: I/SystemServer(1096): Wallpaper Service
+06-27 10:31:03.680: I/SystemServer(1096): Audio Service
+06-27 10:31:03.768: W/AudioPolicyManagerBase(1013): setPhoneState() setting same state 0
+06-27 10:31:03.812: I/SystemServer(1096): Headset Observer
+06-27 10:31:03.812: I/SystemServer(1096): Dock Observer
+06-27 10:31:03.812: I/SystemServer(1096): UI Mode Manager Service
+06-27 10:31:03.851: I/SystemServer(1096): Backup Service
+06-27 10:31:03.898: V/BackupManagerService(1096): No ancestral data
+06-27 10:31:03.969: I/BackupManagerService(1096): Found stale backup journal, scheduling:
+06-27 10:31:03.969: I/BackupManagerService(1096):     + com.android.browser
+06-27 10:31:03.969: I/BackupManagerService(1096):     + com.android.providers.userdictionary
+06-27 10:31:03.969: I/BackupManagerService(1096):     + android
+06-27 10:31:03.969: I/BackupManagerService(1096):     + com.android.vending
+06-27 10:31:03.969: I/BackupManagerService(1096):     + com.google.android.inputmethod.latin
+06-27 10:31:03.969: I/BackupManagerService(1096):     + com.android.providers.settings
+06-27 10:31:03.984: I/BackupManagerService(1096): Backup enabled => false
+06-27 10:31:03.984: I/SystemServer(1096): AppWidget Service
+06-27 10:31:03.984: I/SystemServer(1096): Recognition Service
+06-27 10:31:04.000: D/VoldCmdListener(1008): share status ums
+06-27 10:31:04.000: D/StorageNotification(1096): Startup with UMS connection true (media state unmounted)
+06-27 10:31:04.015: I/SystemServer(1096): DiskStats Service
+06-27 10:31:04.023: I/WindowManager(1096): SAFE MODE not enabled
+06-27 10:31:04.023: D/dalvikvm(1096): JIT started for system_server
+06-27 10:31:04.039: W/DevicePolicyManagerService(1096): failed parsing /data/system/device_policies.xml java.io.FileNotFoundException: /data/system/device_policies.xml (No such file or directory)
+06-27 10:31:04.062: I/ActivityManager(1096): Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=3 keys=2/1/2 nav=2/2 orien=1 layout=34 uiMode=0 seq=1}
+06-27 10:31:04.070: E/Sensors(1096): Couldn't find or open 'sensors' driver (No such file or directory)
+06-27 10:31:04.101: I/EventHub(1096): ignoring event id /dev/input/event7 driver sensors
+06-27 10:31:04.109: D/Sensors(1096): using sensors (name=sensors)
+06-27 10:31:04.109: D/Sensors(1096): using accelerometer (name=accelerometer)
+06-27 10:31:04.109: D/Sensors(1096): using compass (name=compass)
+06-27 10:31:04.109: D/Sensors(1096): using proximity (name=proximity)
+06-27 10:31:04.109: D/Sensors(1096): using lm3530_led (name=lm3530_led)
+06-27 10:31:04.109: I/power(1096): *** set_screen_state 1
+06-27 10:31:04.148: D/PowerManagerService(1096): system ready!
+06-27 10:31:04.156: I/ActivityManager(1096): Sending system update to: ComponentInfo{com.android.providers.calendar/com.android.providers.calendar.CalendarUpgradeReceiver}
+06-27 10:31:04.156: I/ActivityManager(1096): Sending system update to: ComponentInfo{com.android.providers.contacts/com.android.providers.contacts.ContactsUpgradeReceiver}
+06-27 10:31:04.164: I/Zygote(1096): Process: zygote socket opened
+06-27 10:31:04.180: I/power(1096): *** set_screen_state 1
+06-27 10:31:04.203: I/ActivityManager(1096): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarUpgradeReceiver: pid=1146 uid=10031 gids={3003}
+06-27 10:31:04.265: W/StatusBar(1096): No icon ID for slot ime
+06-27 10:31:04.375: D/Tethering(1096): tiwlan0 is not a tetherable iface, ignoring
+06-27 10:31:04.422: I/ActivityManager(1096): Launching preboot mode app: ProcessRecord{44924b70 1146:com.android.providers.calendar/10031}
+06-27 10:31:04.555: I/ActivityManager(1096): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.android.launcher/com.android.launcher2.Launcher }
+06-27 10:31:04.750: D/dalvikvm(1096): GC_FOR_MALLOC freed 4946 objects / 328728 bytes in 134ms
+06-27 10:31:04.773: I/ActivityManager(1096): Start proc android.process.acore for broadcast com.android.providers.contacts/.ContactsUpgradeReceiver: pid=1159 uid=10005 gids={3003, 1015}
+06-27 10:31:05.000: D/StatusBar(1096): DISABLE_EXPAND: yes
+06-27 10:31:05.000: D/WifiService(1096): ACTION_BATTERY_CHANGED pluggedType: 2
+06-27 10:31:05.086: I/ActivityManager(1096): Launching preboot mode app: ProcessRecord{44862660 1159:android.process.acore/10005}
+06-27 10:31:05.390: I/Process(1096): Sending signal. PID: 1146 SIG: 9
+06-27 10:31:05.390: I/Process(1096): Sending signal. PID: 1159 SIG: 9
+06-27 10:31:05.390: I/ActivityManager(1096): Removing system update proc: ProcessRecord{44924b70 1146:com.android.providers.calendar/10031}
+06-27 10:31:05.390: I/ActivityManager(1096): Removing system update proc: ProcessRecord{44862660 1159:android.process.acore/10005}
+06-27 10:31:05.390: I/ActivityManager(1096): System now ready
+06-27 10:31:05.414: I/SystemServer(1096): Making services ready
+06-27 10:31:05.414: I/ActivityManager(1096): Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=3 keys=2/1/2 nav=2/2 orien=1 layout=34 uiMode=17 seq=2}
+06-27 10:31:05.812: I/ActivityManager(1096): Start proc com.google.android.inputmethod.latin for service com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME: pid=1171 uid=10034 gids={}
+06-27 10:31:05.820: D/NetworkManagmentService(1096): Registering observer
+06-27 10:31:05.891: I/ActivityManager(1096): Start proc com.android.phone for added application com.android.phone: pid=1177 uid=1001 gids={3002, 3001, 3003, 1015}
+06-27 10:31:05.906: D/libgps(1096): gps_get_hardware_interface() : returning interface
+06-27 10:31:05.930: I/ActivityManager(1096): Start proc com.android.launcher for activity com.android.launcher/com.android.launcher2.Launcher: pid=1179 uid=10005 gids={3003, 1015}
+06-27 10:31:05.976: I/ActivityManager(1096): Start proc com.android.settings for broadcast com.android.settings/.widget.SettingsAppWidgetProvider: pid=1181 uid=1000 gids={3003, 3002, 3001}
+06-27 10:31:06.039: D/SntpClient(1096): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+06-27 10:31:06.070: D/SntpClient(1096): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+06-27 10:31:06.101: E/NetworkManagmentService(1096): Unexpected response code 600
+06-27 10:31:06.578: I/ActivityThread(1179): Publishing provider com.android.launcher2.settings: com.android.launcher2.LauncherProvider
+06-27 10:31:06.625: D/dalvikvm(1096): GC_FOR_MALLOC freed 5071 objects / 359552 bytes in 238ms
+06-27 10:31:06.703: I/ActivityThread(1177): Publishing provider telephony: com.android.providers.telephony.TelephonyProvider
+06-27 10:31:06.883: I/ActivityThread(1177): Publishing provider icc: com.android.phone.IccProvider
+06-27 10:31:06.883: I/ActivityThread(1177): Publishing provider mms: com.android.providers.telephony.MmsProvider
+06-27 10:31:06.898: I/ActivityThread(1177): Publishing provider sms: com.android.providers.telephony.SmsProvider
+06-27 10:31:06.922: I/ActivityThread(1177): Publishing provider mms-sms: com.android.providers.telephony.MmsSmsProvider
+06-27 10:31:06.961: D/dalvikvm(1179): GC_EXTERNAL_ALLOC freed 980 objects / 71480 bytes in 318ms
+06-27 10:31:07.172: D/dalvikvm(1096): GC_EXTERNAL_ALLOC freed 2077 objects / 161888 bytes in 312ms
+06-27 10:31:07.828: I//system/bin/tc(1009): Cannot find device "ppp0"
+06-27 10:31:07.828: I/logwrapper(1009): /system/bin/tc terminated by exit(1)
+06-27 10:31:07.883: I//system/bin/tc(1009): Cannot find device "ppp0"
+06-27 10:31:07.883: I/logwrapper(1009): /system/bin/tc terminated by exit(1)
+06-27 10:31:07.945: I//system/bin/tc(1009): RTNETLINK answers: No such file or directory
+06-27 10:31:07.953: I/logwrapper(1009): /system/bin/tc terminated by exit(2)
+06-27 10:31:07.976: D/NetworkLocationService(1096): onCreate
+06-27 10:31:07.984: D/SntpClient(1096): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+06-27 10:31:07.984: D/SntpClient(1096): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+06-27 10:31:08.015: I/ActivityManager(1096): Start proc com.google.process.gapps for content provider com.google.android.gsf/.gservices.GservicesProvider: pid=1214 uid=10024 gids={3003, 2001, 1007}
+06-27 10:31:08.086: D/ConnectivityService(1096): getMobileDataEnabled returning true
+06-27 10:31:08.375: I/ActivityThread(1214): Publishing provider com.google.settings: com.google.android.gsf.settings.GoogleSettingsProvider
+06-27 10:31:08.445: D/TelephonyProvider(1177): Setting numeric '310004' to be the current operator
+06-27 10:31:08.445: D/MccTable(1177): updateMccMncConfiguration: mcc=310, mnc=4
+06-27 10:31:08.445: D/MccTable(1177): locale set to en_us
+06-27 10:31:08.445: D/MccTable(1177): WIFI_NUM_ALLOWED_CHANNELS set to 11
+06-27 10:31:08.461: I/WifiService(1096): WifiService trying to setNumAllowed to 11 with persist set to true
+06-27 10:31:08.469: I/ActivityManager(1096): Config changed: { scale=1.0 imsi=310/4 loc=en_US touch=3 keys=2/1/2 nav=2/2 orien=1 layout=34 uiMode=17 seq=3}
+06-27 10:31:08.476: I/UsageStats(1096): Unexpected resume of com.android.launcher while already resumed in com.android.launcher
+06-27 10:31:08.594: I/ActivityManager(1096): Start proc android.process.acore for content provider com.android.providers.contacts/.CallLogProvider: pid=1224 uid=10005 gids={3003, 1015}
+06-27 10:31:08.725: I/ActivityManager(1096): Start proc android.process.media for broadcast com.android.providers.downloads/.DownloadReceiver: pid=1258 uid=10006 gids={1015, 2001, 3003}
+06-27 10:31:08.867: W/ActivityManager(1096): Unable to start service Intent { act=com.android.ussd.IExtendedNetworkService }: not found
+06-27 10:31:08.875: V/WifiStateTracker(1096): Connection to supplicant established, state=DISCONNECTED
+06-27 10:31:08.883: D/NetworkStateTracker(1096): setDetailed state, old =IDLE and new state=DISCONNECTED
+06-27 10:31:08.922: D/ConnectivityService(1096): ConnectivityChange for WIFI: DISCONNECTED/DISCONNECTED
+06-27 10:31:08.930: I/wpa_supplicant(1160): CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00
+06-27 10:31:08.930: V/WifiMonitor(1096): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00]
+06-27 10:31:08.937: D/ConnectivityService(1096): getMobileDataEnabled returning true
+06-27 10:31:08.944: I/ActivityManager(1096): Start proc com.google.android.apps.uploader for broadcast com.google.android.apps.uploader/.ConnectivityBroadcastReceiver: pid=1266 uid=10035 gids={3003}
+06-27 10:31:08.953: D/OtaUtils(1177): CdmaOtaConfigData constructor!
+06-27 10:31:08.953: D/OtaUtils(1177): CdmaOtaInCallScreenState: constructor init to UNDEFINED
+06-27 10:31:08.961: D/DataConnectionTracker(1177): enableApnType(default), isApnTypeActive = false and state = IDLE
+06-27 10:31:08.961: D/DataConnectionTracker(1177): setEnabled(0, true) with old state = true and enabledCount = 1
+06-27 10:31:08.969: I/ActivityThread(1224): Publishing provider user_dictionary: com.android.providers.userdictionary.UserDictionaryProvider
+06-27 10:31:08.992: I/ActivityManager(1096): Start proc com.motorola.calendar for broadcast com.motorola.calendar/com.motorola.motosync.service.EasBootReceiver: pid=1231 uid=10001 gids={3003}
+06-27 10:31:09.000: I/ActivityThread(1214): Publishing provider subscribedfeeds: com.google.android.gsf.subscribedfeeds.SubscribedFeedsProvider
+06-27 10:31:09.008: V/WifiStateTracker(1096): Changing supplicant state: DISCONNECTED ==> SCANNING
+06-27 10:31:09.008: D/NetworkStateTracker(1096): setDetailed state, old =DISCONNECTED and new state=SCANNING
+06-27 10:31:09.008: D/ConnectivityService(1096): Dropping ConnectivityChange for WIFI: DISCONNECTED/SCANNING
+06-27 10:31:09.086: D/libgps(1096): GpsInterface_init()
+06-27 10:31:09.164: I/ActivityThread(1224): Publishing provider com.android.social: com.android.providers.contacts.SocialProvider
+06-27 10:31:09.233: I/ActivityManager(1096): Start proc com.amazon.mp3 for broadcast com.amazon.mp3/.client.receiver.RetryDownloadsReceiver: pid=1279 uid=10038 gids={3003, 1015}
+06-27 10:31:09.258: D/BT HSHFP(1177): Starting BluetoothHeadsetService
+06-27 10:31:09.258: I/ActivityThread(1224): Publishing provider applications: com.android.providers.applications.ApplicationsProvider
+06-27 10:31:09.273: D/DataConnectionTracker(1177): EVENT_APN_ENABLE_REQUEST 0, 1
+06-27 10:31:09.273: D/DataConnectionTracker(1177):  dataEnabled = true, enabledCount = 1, isApnTypeActive = false
+06-27 10:31:09.398: D/dalvikvm(1012): GC_EXPLICIT freed 277 objects / 10464 bytes in 410ms
+06-27 10:31:09.445: I/ActivityThread(1214): Publishing provider com.google.android.gsf.gservices: com.google.android.gsf.gservices.GservicesProvider
+06-27 10:31:09.569: I/ActivityManager(1096): Start proc com.google.android.gm for broadcast com.google.android.gm/.downloadprovider.DownloadReceiver: pid=1286 uid=10047 gids={3003, 1015}
+06-27 10:31:09.570: I/GservicesProvider(1214): Gservices pushing to system: true; secure: true
+06-27 10:31:09.578: I/ActivityThread(1214): Publishing provider com.google.android.providers.talk: com.google.android.gsf.talk.TalkProvider
+06-27 10:31:09.609: I/ActivityThread(1224): Publishing provider contacts;com.android.contacts: com.android.providers.contacts.ContactsProvider2
+06-27 10:31:09.781: D/dalvikvm(1012): GC_EXPLICIT freed 50 objects / 2184 bytes in 338ms
+06-27 10:31:09.789: I/ActivityThread(1231): Publishing provider com.motorola.motosync.provider.AccountContentProvider: com.motorola.motosync.provider.AccountContentProvider
+06-27 10:31:09.890: I/MOTOSYNC(1231): App onCreate()
+06-27 10:31:09.898: W/libgps(1096): GpsInterface_get_extension() : Extension "agps" not supported
+06-27 10:31:09.898: W/libgps(1096): GpsInterface_get_extension() : Extension "gps-ni" not supported
+06-27 10:31:09.898: W/libgps(1096): GpsInterface_get_extension() : Extension "privacy" not supported
+06-27 10:31:09.898: I/libgps(1096): GpsInterface_get_extension() : Returned "gps-debug" extension
+06-27 10:31:09.922: D/dalvikvm(1177): GC_FOR_MALLOC freed 3984 objects / 244368 bytes in 310ms
+06-27 10:31:09.945: D/dalvikvm(1012): GC_EXPLICIT freed 2 objects / 48 bytes in 167ms
+06-27 10:31:09.969: D/LocationMasfClient(1096): using https://www.google.com/loc/m/api
+06-27 10:31:10.008: I/ActivityManager(1096): Start proc com.vzw.vvm.androidclient for broadcast com.vzw.vvm.androidclient/.ui.VVMBroadcastReceiver: pid=1244 uid=10017 gids={3003, 1015}
+06-27 10:31:10.164: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:31:10.164: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:31:10.265: I/ActivityThread(1244): Publishing provider com.vzw.vvm.androidclient.lib.storage.VVMMsgData: com.vzw.vvm.androidclient.lib.storage.VVMContentProvider
+06-27 10:31:10.430: D/AlarmManagerService(1096): Kernel timezone updated to 300 minutes west of GMT
+06-27 10:31:08.561: I/ActivityThread(1224): Publishing provider call_log: com.android.providers.contacts.CallLogProvider
+06-27 10:31:08.616: D/AlarmManagerService(1096): Kernel timezone updated to 300 minutes west of GMT
+06-27 10:31:08.811: I/ActivityThread(1258): Publishing provider media: com.android.providers.media.MediaProvider
+06-27 10:31:08.835: V/MediaProvider(1258): Attached volume: internal
+06-27 10:31:08.850: I/ActivityThread(1258): Publishing provider downloads: com.android.providers.downloads.DownloadProvider
+06-27 10:31:08.858: I/ActivityThread(1258): Publishing provider drm: com.android.providers.drm.DrmProvider
+06-27 10:31:08.921: I/GTalkService(1214): [ServiceAutoStarter] --- connectivity changed
+06-27 10:31:08.921: I/GTalkService(1214): [ServiceAutoStarter] --- start GTalk service ---
+06-27 10:31:08.944: D/GTalkService(1214): [GTalkService.1] ### onCreate ###
+06-27 10:31:09.092: I/ActivityThread(1266): Publishing provider com.google.android.apps.uploader: com.google.android.apps.uploader.UploadsContentProvider
+06-27 10:31:09.139: D/GTalkService(1214): [GTalkService.1] setBackgroundDataWithLock: mBackgroundDataEnabled=true
+06-27 10:31:09.163: I/ActivityThread(1266): Publishing provider com.google.photos.provider.Album: com.google.android.apps.uploader.clients.picasa.AlbumProvider
+06-27 10:31:09.171: D/MediaUploader(1266): UploaderApplication.onCreate
+06-27 10:31:09.202: D/MediaUploader(1266): nonWifiLimit=20971520, default=20971520
+06-27 10:31:09.210: D/GTalkService(1214): [GTalkService.1] onStartCommand: found 0 connections, force audit connections...
+06-27 10:31:09.217: I/MediaUploader(1266): No need to wake up
+06-27 10:31:09.366: D/GoogleLoginService(1214): onBind: Intent { act=android.accounts.AccountAuthenticator cmp=com.google.android.gsf/.loginservice.GoogleLoginService }
+06-27 10:31:09.366: W/GoogleLoginService(1214): Device has no accounts: sending Intent { act=com.google.android.gsf.LOGIN_ACCOUNTS_MISSING }
+06-27 10:31:09.499: I/ActivityThread(1279): Publishing provider com.amazon.mp3.client.SearchSuggestionProvider: com.amazon.mp3.client.SearchSuggestionProvider
+06-27 10:31:09.538: I/global(1279): Default buffer size used in BufferedInputStream constructor. It would be better to be explicit if an 8k buffer is required.
+06-27 10:31:09.577: D/FREESPACE(1279): Bytes to fill: 247635968
+06-27 10:31:09.780: D/dalvikvm(1279): GC_FOR_MALLOC freed 4420 objects / 382488 bytes in 92ms
+06-27 10:31:09.819: I/ActivityThread(1286): Publishing provider gmail-ls: com.google.android.gm.provider.MailProvider
+06-27 10:31:09.858: D/NetworkLocationService(1096): onBind com.google.android.location.NetworkLocationProvider
+06-27 10:31:09.858: D/NetworkLocationService(1096): onBind com.google.android.location.GeocodeProvider
+06-27 10:31:09.889: I/ActivityThread(1286): Publishing provider com.google.android.gm.attachmentspreviews: com.google.android.gm.AttachmentPreviewProvider
+06-27 10:31:09.889: I/ActivityThread(1286): Publishing provider com.google.android.gmail.SuggestionProvider: com.google.android.gm.SuggestionsProvider
+06-27 10:31:09.889: I/ActivityThread(1286): Publishing provider gmail-downloads: com.google.android.gm.downloadprovider.DownloadProvider
+06-27 10:31:09.991: D/dalvikvm(1096): GC_FOR_MALLOC freed 7101 objects / 347240 bytes in 88ms
+06-27 10:31:10.116: D/Tethering(1096): Tethering got CONNECTIVITY_ACTION
+06-27 10:31:10.116: D/Tethering(1096): MasterInitialState.processMessage what=3
+06-27 10:31:10.116: E/HierarchicalStateMachine(1096): TetherMaster - unhandledMessage: msg.what=3
+06-27 10:31:10.453: D/SystemClock(1177): Setting time of day to sec=1372347068
+06-27 10:31:10.592: D/MobileDataStateTracker(1096): default Received state= DISCONNECTED, old= DISCONNECTED, reason= radioTurnedOff, apnTypeList= default
+06-27 10:31:10.600: D/Configuration(1279): active site = local
+06-27 10:31:10.647: I/ActivityManager(1096): Start proc com.google.android.partnersetup for broadcast com.google.android.partnersetup/.PhoneStateReceiver: pid=1296 uid=10016 gids={}
+06-27 10:31:10.694: D/dalvikvm(1179): GC_EXTERNAL_ALLOC freed 2805 objects / 155040 bytes in 136ms
+06-27 10:31:10.780: D/MobileDataStateTracker(1096): default Received state= DISCONNECTED, old= DISCONNECTED, reason= apnSwitched, apnTypeList= default
+06-27 10:31:10.796: D/GooglePartnerSetup(1296): PhoneStateReceiver.onReceive
+06-27 10:31:11.069: D/AlarmManagerService(1096): Kernel timezone updated to 300 minutes west of GMT
+06-27 10:31:11.092: D/MobileDataStateTracker(1096): default Received state= DISCONNECTED, old= DISCONNECTED, reason= (unspecified), apnTypeList= default
+06-27 10:31:11.108: D/GooglePartnerSetup(1296): client_id set to: android-verizon
+06-27 10:31:11.132: D/GooglePartnerSetup(1296): maps client id: gmm-android-verizon
+06-27 10:31:11.163: D/MobileDataStateTracker(1096): default Received state= DISCONNECTED, old= DISCONNECTED, reason= (unspecified), apnTypeList= default
+06-27 10:31:11.171: D/GooglePartnerSetup(1296): youtube client id: mvapp-android-verizon
+06-27 10:31:11.186: D/GooglePartnerSetup(1296): market client id: am-android-verizon
+06-27 10:31:11.194: D/GooglePartnerSetup(1296): voicesearch client id: ms-android-verizon
+06-27 10:31:11.194: D/GooglePartnerSetup(1296): PhoneStateReceiver: Client id data is current.No need to run - printing clientids FYI
+06-27 10:31:11.217: D/GTalkService(1214): [GTalkService.14] account missing
+06-27 10:31:11.217: D/GooglePartnerSetup(1296): client_id set to: android-verizon
+06-27 10:31:11.233: D/GooglePartnerSetup(1296): maps client id: gmm-android-verizon
+06-27 10:31:11.241: D/GTalkService(1214): [GTalkService.13] account missing
+06-27 10:31:11.257: D/LocationProviderProxy(1096): LocationProviderProxy.onServiceConnected ComponentInfo{com.google.android.location/com.google.android.location.NetworkLocationService}
+06-27 10:31:11.257: D/GeocoderProxy(1096): onServiceConnected ComponentInfo{com.google.android.location/com.google.android.location.NetworkLocationService}
+06-27 10:31:11.264: D/GooglePartnerSetup(1296): youtube client id: mvapp-android-verizon
+06-27 10:31:11.358: D/AlarmManagerService(1096): Kernel timezone updated to 300 minutes west of GMT
+06-27 10:31:11.358: I/dalvikvm(1096): Jit: resizing JitTable from 4096 to 8192
+06-27 10:31:11.413: W/WindowManager(1096): App freeze timeout expired.
+06-27 10:31:11.413: W/WindowManager(1096): Force clearing freeze: AppWindowToken{449550b0 token=HistoryRecord{449536b8 com.android.launcher/com.android.launcher2.Launcher}}
+06-27 10:31:11.491: D/dalvikvm(1224): GC_FOR_MALLOC freed 4574 objects / 279272 bytes in 140ms
+06-27 10:31:11.522: D/dalvikvm(1214): GC_FOR_MALLOC freed 4379 objects / 271048 bytes in 251ms
+06-27 10:31:11.530: D/GooglePartnerSetup(1296): market client id: am-android-verizon
+06-27 10:31:11.538: D/GooglePartnerSetup(1296): voicesearch client id: ms-android-verizon
+06-27 10:31:11.553: I/ActivityManager(1096): Start proc com.android.vending for broadcast com.android.vending/.DeviceConfigurationReceiver: pid=1305 uid=10048 gids={1015, 3003}
+06-27 10:31:11.796: I/ActivityThread(1305): Publishing provider com.android.vending.SuggestionsProvider: com.android.vending.SuggestionsProvider
+06-27 10:31:11.842: D/vending(1305): [1] VendingApplication.onCreate(): Resetting ServiceLocator from app
+06-27 10:31:11.882: D/vending(1305): [9] DeviceConfigurationReceiver$1.run(): Clearing cache in response to android.intent.action.SIM_STATE_CHANGED
+06-27 10:31:11.882: I/ActivityManager(1096): Start proc com.google.android.deskclock for broadcast com.google.android.deskclock/com.android.deskclock.AlarmInitReceiver: pid=1314 uid=10015 gids={}
+06-27 10:31:12.046: I/ActivityThread(1314): Publishing provider com.android.deskclock: com.android.deskclock.AlarmProvider
+06-27 10:31:12.241: I/ActivityManager(1096): Start proc com.android.protips for broadcast com.android.protips/.ProtipWidget: pid=1322 uid=10054 gids={}
+06-27 10:31:12.327: I/EventLogService(1214): Aggregate from 1372278389331 (log), 1372278389331 (data)
+06-27 10:31:12.382: I/ActivityManager(1096): Start proc com.google.android.apps.genie.geniewidget for broadcast com.google.android.apps.genie.geniewidget/.miniwidget.MiniWidgetProvider: pid=1328 uid=10043 gids={3003, 1015}
+06-27 10:31:12.561: D/AlarmManagerService(1096): Kernel timezone updated to 300 minutes west of GMT
+06-27 10:31:12.600: D/MobileDataStateTracker(1096): default Received state= DISCONNECTED, old= DISCONNECTED, reason= (unspecified), apnTypeList= default
+06-27 10:31:12.671: D/MobileDataStateTracker(1096): default Received state= DISCONNECTED, old= DISCONNECTED, reason= (unspecified), apnTypeList= default
+06-27 10:31:12.725: I/ActivityThread(1328): Publishing provider com.google.android.apps.genie.geniewidget.weather: com.google.android.apps.genie.geniewidget.providers.WeatherProvider
+06-27 10:31:12.733: I/ActivityThread(1328): Publishing provider com.google.android.apps.genie.geniewidget.newsimage: com.google.android.apps.genie.geniewidget.providers.NewsImageProvider
+06-27 10:31:12.827: D/NetworkLocationProvider(1096): onDataConnectionStateChanged 2
+06-27 10:31:12.936: D/WifiService(1096): ACTION_BATTERY_CHANGED pluggedType: 2
+06-27 10:31:13.499: D/dalvikvm(1096): GC_EXPLICIT freed 11016 objects / 555800 bytes in 90ms
+06-27 10:31:13.616: W/Genie(1328): Cache file not found: java.io.FileNotFoundException: /data/data/com.google.android.apps.genie.geniewidget/files/genie_iconcache (No such file or directory)
+06-27 10:31:13.827: D/Genie(1328): onRedrawComplete, no data so requesting refresh. Model: NEW: showing news 0 of 0 [no weather]
+06-27 10:31:13.874: D/NetworkLocationProvider(1096): onDataConnectionStateChanged 2
+06-27 10:31:13.913: I/ActivityManager(1096): Start proc com.google.android.googlequicksearchbox for broadcast com.google.android.googlequicksearchbox/.SearchWidgetProvider: pid=1340 uid=10021 gids={3003}
+06-27 10:31:14.007: D/dalvikvm(1012): GC_EXPLICIT freed 277 objects / 10528 bytes in 90ms
+06-27 10:31:14.046: D/dalvikvm(1012): GC_EXPLICIT freed 42 objects / 1832 bytes in 38ms
+06-27 10:31:14.092: D/dalvikvm(1012): GC_EXPLICIT freed 2 objects / 64 bytes in 43ms
+06-27 10:31:14.163: D/NetworkLocationProvider(1096): onDataConnectionStateChanged 2
+06-27 10:31:14.210: W/ActivityManager(1096): Activity idle timeout for HistoryRecord{449536b8 com.android.launcher/com.android.launcher2.Launcher}
+06-27 10:31:14.217: D/PowerManagerService(1096): bootCompleted
+06-27 10:31:14.233: I/ActivityThread(1340): Publishing provider com.google.android.googlequicksearchbox.shortcuts: com.google.android.googlequicksearchbox.ShortcutsProvider
+06-27 10:31:14.241: I/ActivityThread(1340): Publishing provider com.google.android.googlequicksearchbox.google: com.google.android.googlequicksearchbox.google.GoogleSuggestionProvider
+06-27 10:31:14.342: D/GoogleLoginService(1214): onBind: Intent { act=android.accounts.AccountAuthenticator cmp=com.google.android.gsf/.loginservice.GoogleLoginService }
+06-27 10:31:14.342: W/GoogleLoginService(1214): Device has no accounts: sending Intent { act=com.google.android.gsf.LOGIN_ACCOUNTS_MISSING }
+06-27 10:31:14.421: I/ActivityManager(1096): Start proc com.google.android.music for broadcast com.google.android.music/com.android.music.MediaAppWidgetProvider: pid=1350 uid=10019 gids={3003, 1015}
+06-27 10:31:14.428: D/Genie(1328): No last fix, requesting location fix...
+06-27 10:31:14.530: I/Launcher.Model(1179): not binding apps: no Launcher activity
+06-27 10:31:14.592: D/Tethering(1096): sendTetherStateChangedBroadcast 1, 0, 0
+06-27 10:31:14.592: D/Tethering(1096): interfaceAdded :usb0
+06-27 10:31:14.616: D/VoldCmdListener(1008): volume mount /mnt/sdcard
+06-27 10:31:14.616: I/Vold(1008): /dev/block/vold/179:1 being considered for volume sdcard
+06-27 10:31:14.616: D/Vold(1008): Volume sdcard state changing 1 (Idle-Unmounted) -> 3 (Checking)
+06-27 10:31:14.655: I/StorageNotification(1096): Media {/mnt/sdcard} state changed from {unmounted} -> {checking}
+06-27 10:31:14.764: I/SearchManagerService(1096): Building list of searchable activities
+06-27 10:31:14.850: D/dalvikvm(1179): GC_EXPLICIT freed 2712 objects / 144184 bytes in 321ms
+06-27 10:31:14.866: I//system/bin/fsck_msdos(1008): ** /dev/block/vold/179:1
+06-27 10:31:14.874: I//system/bin/fsck_msdos(1008): ** Phase 1 - Read and Compare FATs
+06-27 10:31:14.874: I//system/bin/fsck_msdos(1008): Attempting to allocate 121 KB for FAT
+06-27 10:31:15.405: I//system/bin/fsck_msdos(1008): Attempting to allocate 121 KB for FAT
+06-27 10:31:15.428: I//system/bin/fsck_msdos(1008): ** Phase 2 - Check Cluster Chains
+06-27 10:31:15.436: I//system/bin/fsck_msdos(1008): ** Phase 3 - Checking Directories
+06-27 10:31:15.467: D/Genie(1328): onRedrawComplete, no data so requesting refresh. Model: NEW: showing news 0 of 0 [no weather]
+06-27 10:31:15.475: D/AlarmManagerService(1096): Kernel timezone updated to 300 minutes west of GMT
+06-27 10:31:15.538: D/OtaUtils(1177): min_string: 0000001727
+06-27 10:31:15.538: D/OtaUtils(1177): phoneNeedsActivation is set to true
+06-27 10:31:15.538: D/OtaUtils(1177): otaShowActivationScreen: 1
+06-27 10:31:15.546: I/ActivityManager(1096): Starting activity: Intent { act=com.android.phone.InCallScreen.SHOW_ACTIVATION flg=0x10000000 cmp=com.android.phone/.InCallScreen }
+06-27 10:31:15.553: D/MobileDataStateTracker(1096): default Received state= DISCONNECTED, old= DISCONNECTED, reason= (unspecified), apnTypeList= default
+06-27 10:31:15.577: D/OtaUtils(1177): activation intent sent.
+06-27 10:31:15.710: I/EasBootReceiver(1231): Start Wipe
+06-27 10:31:15.717: I/RecoverySystem(1096): No recovery log file
+06-27 10:31:15.882: I/ActivityManager(1096): Start proc com.android.bluetooth for broadcast com.android.bluetooth/.opp.BluetoothOppReceiver: pid=1365 uid=10011 gids={3003, 3002, 3001, 1015}
+06-27 10:31:16.061: I/ActivityThread(1365): Publishing provider com.android.bluetooth.opp: com.android.bluetooth.opp.BluetoothOppProvider
+06-27 10:31:16.092: D/dalvikvm(1177): GC_FOR_MALLOC freed 7560 objects / 454488 bytes in 95ms
+06-27 10:31:16.155: I/ActivityManager(1096): Start proc com.android.mms for broadcast com.android.mms/.transaction.MmsSystemEventReceiver: pid=1371 uid=10012 gids={3003, 1015}
+06-27 10:31:16.421: D/dalvikvm(1177): GC_EXTERNAL_ALLOC freed 1602 objects / 102616 bytes in 144ms
+06-27 10:31:16.436: I/ActivityThread(1371): Publishing provider com.android.mms.SuggestionsProvider: com.android.mms.SuggestionsProvider
+06-27 10:31:16.780: D/dalvikvm(1177): GC_EXTERNAL_ALLOC freed 549 objects / 31488 bytes in 58ms
+06-27 10:31:16.913: W/ResourceType(1177): getEntry failing because entryIndex 65 is beyond type entryCount 1
+06-27 10:31:17.022: D/GooglePartnerSetup(1296): GooglePartnerSetup.onReceive
+06-27 10:31:17.069: D/GooglePartnerSetup(1296): client_id set to: android-verizon
+06-27 10:31:17.077: D/GooglePartnerSetup(1296): maps client id: gmm-android-verizon
+06-27 10:31:17.100: D/GooglePartnerSetup(1296): youtube client id: mvapp-android-verizon
+06-27 10:31:17.124: D/GooglePartnerSetup(1296): market client id: am-android-verizon
+06-27 10:31:17.132: D/GooglePartnerSetup(1296): voicesearch client id: ms-android-verizon
+06-27 10:31:17.132: D/GooglePartnerSetup(1296): GooglePartnerSetup: Partner data is current.No need to run - printing clientids FYI
+06-27 10:31:17.147: D/GooglePartnerSetup(1296): client_id set to: android-verizon
+06-27 10:31:17.163: D/GooglePartnerSetup(1296): maps client id: gmm-android-verizon
+06-27 10:31:17.178: D/GooglePartnerSetup(1296): youtube client id: mvapp-android-verizon
+06-27 10:31:17.194: D/GooglePartnerSetup(1296): market client id: am-android-verizon
+06-27 10:31:17.210: D/GooglePartnerSetup(1296): voicesearch client id: ms-android-verizon
+06-27 10:31:17.327: D/OtaUtils(1177): Enter OtaUtil constructor
+06-27 10:31:17.413: D/OtaUtils(1177): readXmlSettings()...
+06-27 10:31:17.413: D/OtaUtils(1177): readXmlSettings(), otaShowActivationScreen1
+06-27 10:31:17.413: D/OtaUtils(1177): readXmlSettings(), otaShowListeningScreen1
+06-27 10:31:17.413: D/OtaUtils(1177): readXmlSettings(), otaShowActivateFailTimes3
+06-27 10:31:17.413: D/OtaUtils(1177): readXmlSettings(), otaPlaySuccessFailureTone1
+06-27 10:31:17.413: D/OtaUtils(1177): initOtaInCallScreen()...
+06-27 10:31:17.413: D/OtaUtils(1177): setCdmaOtaInCallScreenState: NORMAL
+06-27 10:31:17.428: D/OtaUtils(1177): getCdmaOtaInCallScreenState: NORMAL
+06-27 10:31:17.428: D/OtaUtils(1177): setCdmaOtaInCallScreenState: NORMAL
+06-27 10:31:17.428: D/OtaUtils(1177): otaShowProperScreen()...
+06-27 10:31:17.428: D/OtaUtils(1177): otaShowProperScreen(), OTA is foreground activity, currentstate =OTA_STATUS_ACTIVATION
+06-27 10:31:17.428: D/OtaUtils(1177): OtaShowActivationScreen()...
+06-27 10:31:17.428: D/OtaUtils(1177): OtaShowActivationScreen(): show activation screen
+06-27 10:31:17.428: D/OtaUtils(1177): OtaScreenInitialize()...
+06-27 10:31:17.452: D/OtaUtils(1177): otaShowProperScreen()...
+06-27 10:31:17.452: D/OtaUtils(1177): otaShowProperScreen(), OTA is foreground activity, currentstate =OTA_STATUS_ACTIVATION
+06-27 10:31:17.452: D/OtaUtils(1177): OtaShowActivationScreen()...
+06-27 10:31:17.452: D/OtaUtils(1177): OtaShowActivationScreen(): show activation screen
+06-27 10:31:17.452: D/OtaUtils(1177): OtaScreenInitialize()...
+06-27 10:31:17.514: W/WindowManager(1096): Layout repeat skipped after too many iterations
+06-27 10:31:17.514: W/WindowManager(1096): Layout repeat skipped after too many iterations
+06-27 10:31:17.514: W/WindowManager(1096): Layout repeat skipped after too many iterations
+06-27 10:31:17.522: W/WindowManager(1096): Animation repeat aborted after too many iterations
+06-27 10:31:17.655: I/ActivityManager(1096): Displayed activity com.android.phone/.InCallScreen: 1710 ms (total 15112 ms)
+06-27 10:31:17.671: I/SurfaceFlinger(1096): Boot is finished (22575 ms)
+06-27 10:31:17.936: I/ActivityManager(1096): Displayed activity com.android.launcher/com.android.launcher2.Launcher: 15398 ms (total 15398 ms)
+06-27 10:31:17.991: I//system/bin/fsck_msdos(1008): ** Phase 4 - Checking for Lost Files
+06-27 10:31:18.014: I//system/bin/fsck_msdos(1008): 110 files, 973728 free (60858 clusters)
+06-27 10:31:18.038: I/logwrapper(1008): /system/bin/fsck_msdos terminated by exit(0)
+06-27 10:31:18.038: I/Vold(1008): Filesystem check completed OK
+06-27 10:31:18.116: I/Vold(1008): Device /dev/block/vold/179:1, target /mnt/sdcard mounted @ /mnt/secure/staging
+06-27 10:31:18.124: I/PackageManager(1096): Updating external media status from unmounted to mounted
+06-27 10:31:18.124: D/Vold(1008): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+06-27 10:31:18.132: I/StorageNotification(1096): Media {/mnt/sdcard} state changed from {checking} -> {mounted}
+06-27 10:31:18.671: D/dalvikvm(1179): GC_FOR_MALLOC freed 8899 objects / 424664 bytes in 154ms
+06-27 10:31:18.702: D/MediaScannerService(1258): start scanning volume internal
+06-27 10:31:18.967: D/dalvikvm(1179): GC_EXTERNAL_ALLOC freed 487 objects / 24384 bytes in 104ms
+06-27 10:31:19.022: D/VoldCmdListener(1008): asec list
+06-27 10:31:19.139: I/PackageManager(1096): No secure containers on sdcard
+06-27 10:31:19.257: W/PackageManager(1096): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+06-27 10:31:19.264: W/PackageManager(1096): Unknown permission com.google.android.providers.gmail.permission.WRITE_GMAIL in package com.qo.android.gep
+06-27 10:31:19.264: W/PackageManager(1096): Unknown permission com.google.android.providers.gmail.permission.READ_GMAIL in package com.qo.android.gep
+06-27 10:31:19.264: W/PackageManager(1096): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.motorola.hiddenmenu
+06-27 10:31:19.272: W/PackageManager(1096): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x1be45)
+06-27 10:31:19.280: W/PackageManager(1096): Not granting permission android.permission.DEVICE_POWER to package com.google.android.deskclock (protectionLevel=2 flags=0xbe45)
+06-27 10:31:19.280: W/PackageManager(1096): Unknown permission com.google.android.voicesearch.SHORTCUTS_ACCESS in package com.google.android.googlequicksearchbox
+06-27 10:31:19.288: W/PackageManager(1096): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.vending (protectionLevel=2 flags=0x2be05)
+06-27 10:31:19.288: W/PackageManager(1096): Unknown permission android.permission.SEND in package com.android.vending
+06-27 10:31:19.288: W/PackageManager(1096): Unknown permission android.permission.DIAL in package com.motorola.calendar
+06-27 10:31:19.288: W/PackageManager(1096): Unknown permission com.google.android.voicesearch.AUDIO_FILE_ACCESS in package com.google.android.gm
+06-27 10:31:19.296: W/PackageManager(1096): Unknown permission com.android.providers.im.permission.READ_ONLY in package com.google.android.apps.maps
+06-27 10:31:19.553: D/dalvikvm(1096): GC_FOR_MALLOC freed 16268 objects / 769272 bytes in 103ms
+06-27 10:31:19.678: D/NetworkLocationProvider(1096): onDataConnectionStateChanged 2
+06-27 10:31:19.772: D/NetworkLocationProvider(1096): onDataConnectionStateChanged 2
+06-27 10:31:19.889: I/ActivityManager(1096): Starting activity: Intent { flg=0x10000000 cmp=com.google.android.gsf/.update.SystemUpdateInstallDialog }
+06-27 10:31:19.991: D/PhoneWindow(1177): couldn't save which view has focus because the focused view android.widget.ScrollView@44753980 has no id.
+06-27 10:31:20.006: I/GTalkService(1214): [ServiceAutoStarter] --- received boot intent broadcast
+06-27 10:31:20.038: I/ActivityManager(1096): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarReceiver: pid=1397 uid=10031 gids={3003}
+06-27 10:31:20.139: D/NetworkLocationProvider(1096): onDataConnectionStateChanged 2
+06-27 10:31:20.311: I/ActivityThread(1397): Publishing provider com.android.calendar: com.android.providers.calendar.CalendarProvider2
+06-27 10:31:20.421: D/dalvikvm(1214): GC_FOR_MALLOC freed 3691 objects / 383296 bytes in 112ms
+06-27 10:31:20.460: W/InputManagerService(1096): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@447a8e70
+06-27 10:31:20.499: D/OtaUtils(1177): getCdmaOtaInCallScreenState: NORMAL
+06-27 10:31:20.499: D/OtaUtils(1177): setCdmaOtaInCallScreenState: NORMAL
+06-27 10:31:20.499: D/StatusBar(1096): DISABLE_EXPAND: yes
+06-27 10:31:20.507: D/OtaUtils(1177): otaShowProperScreen()...
+06-27 10:31:20.507: D/OtaUtils(1177): otaShowProperScreen(), OTA is foreground activity, currentstate =OTA_STATUS_ACTIVATION
+06-27 10:31:20.507: D/OtaUtils(1177): OtaShowActivationScreen()...
+06-27 10:31:20.507: D/OtaUtils(1177): OtaShowActivationScreen(): show activation screen
+06-27 10:31:20.507: D/OtaUtils(1177): OtaScreenInitialize()...
+06-27 10:31:20.522: D/OtaUtils(1177): otaShowProperScreen()...
+06-27 10:31:20.522: D/OtaUtils(1177): otaShowProperScreen(), OTA is foreground activity, currentstate =OTA_STATUS_ACTIVATION
+06-27 10:31:20.522: D/OtaUtils(1177): OtaShowActivationScreen()...
+06-27 10:31:20.522: D/OtaUtils(1177): OtaShowActivationScreen(): show activation screen
+06-27 10:31:20.522: D/OtaUtils(1177): OtaScreenInitialize()...
+06-27 10:31:20.585: I/ActivityManager(1096): Start proc com.google.android.email for broadcast com.google.android.email/com.android.exchange.BootReceiver: pid=1406 uid=10033 gids={3003, 1015}
+06-27 10:31:20.733: I/ActivityThread(1406): Publishing provider com.android.exchange.provider: com.android.exchange.provider.ExchangeProvider
+06-27 10:31:20.741: I/ActivityThread(1406): Publishing provider com.android.email.attachmentprovider: com.android.email.provider.AttachmentProvider
+06-27 10:31:20.749: I/ActivityThread(1406): Publishing provider com.android.email.provider: com.android.email.provider.EmailProvider
+06-27 10:31:20.803: D/Exchange(1406): BootReceiver onReceive
+06-27 10:31:20.819: D/EAS SyncManager(1406): !!! EAS SyncManager, onCreate
+06-27 10:31:20.866: I/ActivityManager(1096): Start proc com.android.voicedialer for broadcast com.android.voicedialer/.VoiceDialerReceiver: pid=1416 uid=10053 gids={3002}
+06-27 10:31:21.053: D/EAS SyncManager(1406): !!! EAS SyncManager, onStartCommand
+06-27 10:31:21.069: D/GoogleLoginService(1214): onBind: Intent { act=android.accounts.AccountAuthenticator cmp=com.google.android.gsf/.loginservice.GoogleLoginService }
+06-27 10:31:21.077: W/GoogleLoginService(1214): Device has no accounts: sending Intent { act=com.google.android.gsf.LOGIN_ACCOUNTS_MISSING }
+06-27 10:31:21.100: D/EAS SyncManager(1406): !!! EAS SyncManager, stopping self
+06-27 10:31:21.139: D/VoiceDialerReceiver(1416): onReceive Intent { act=android.intent.action.BOOT_COMPLETED cmp=com.android.voicedialer/.VoiceDialerReceiver }
+06-27 10:31:21.139: V/RecognizerEngine(1416): deleteCachedGrammarFiles /data/data/com.android.voicedialer/files/openentries.txt
+06-27 10:31:21.155: I/ActivityManager(1096): Start proc com.google.android.apps.maps:FriendService for broadcast com.google.android.apps.maps/com.google.googlenav.friend.android.ServiceReceiver: pid=1426 uid=10055 gids={3003, 1015}
+06-27 10:31:21.155: I/ActivityManager(1096): No longer want com.android.settings (pid 1181): hidden #16
+06-27 10:31:21.905: I/ActivityManager(1096): No longer want com.android.protips (pid 1322): hidden #16
+06-27 10:31:21.999: D/dalvikvm(1328): GC_FOR_MALLOC freed 3136 objects / 243600 bytes in 50ms
+06-27 10:31:22.108: D/Eas Debug(1406): Logging: 
+06-27 10:31:22.116: D/Genie(1328): onRedrawComplete, no data so requesting refresh. Model: NEW: showing news 0 of 0 [no weather]
+06-27 10:31:22.139: D/EAS SyncManager(1406): !!! EAS SyncManager, onDestroy
+06-27 10:31:22.257: I/ActivityManager(1096): Start proc com.android.protips for broadcast com.android.protips/.ProtipWidget: pid=1435 uid=10054 gids={}
+06-27 10:31:22.483: I/ActivityManager(1096): No longer want android.process.acore (pid 1224): hidden #16
+06-27 10:31:22.530: D/Calendar(1397): missed alarms found: 0
+06-27 10:31:22.671: D/dalvikvm(1179): GC_EXPLICIT freed 8802 objects / 430184 bytes in 102ms
+06-27 10:31:22.710: D/MediaScanner(1258):  prescan time: 2459ms
+06-27 10:31:22.710: D/MediaScanner(1258):     scan time: 70ms
+06-27 10:31:22.710: D/MediaScanner(1258): postscan time: 1ms
+06-27 10:31:22.710: D/MediaScanner(1258):    total time: 2530ms
+06-27 10:31:22.717: D/MediaScannerService(1258): done scanning volume internal
+06-27 10:31:22.725: I/ActivityManager(1096): No longer want com.google.android.apps.uploader (pid 1266): hidden #16
+06-27 10:31:22.788: I/ActivityManager(1096): No longer want com.amazon.mp3 (pid 1279): hidden #16
+06-27 10:31:23.991: I/ActivityManager(1096): Start proc com.google.android.apps.uploader for broadcast com.google.android.apps.uploader/.ConnectivityBroadcastReceiver: pid=1441 uid=10035 gids={3003}
+06-27 10:31:24.069: I/ActivityThread(1441): Publishing provider com.google.android.apps.uploader: com.google.android.apps.uploader.UploadsContentProvider
+06-27 10:31:24.085: I/ActivityThread(1441): Publishing provider com.google.photos.provider.Album: com.google.android.apps.uploader.clients.picasa.AlbumProvider
+06-27 10:31:24.092: D/MediaUploader(1441): UploaderApplication.onCreate
+06-27 10:31:24.108: D/MediaUploader(1441): nonWifiLimit=20971520, default=20971520
+06-27 10:31:24.116: I/MediaUploader(1441): No need to wake up
+06-27 10:31:24.124: I/ActivityManager(1096): Start proc com.google.android.gallery3d for broadcast com.google.android.gallery3d/com.cooliris.cache.BootReceiver: pid=1451 uid=10039 gids={1015, 3003}
+06-27 10:31:24.124: I/ActivityManager(1096): No longer want com.motorola.calendar (pid 1231): hidden #16
+06-27 10:31:24.186: I/ActivityThread(1451): Publishing provider com.cooliris.picasa.contentprovider: com.cooliris.picasa.PicasaContentProvider
+06-27 10:31:24.507: I/BootReceiver(1451): Got intent with action android.intent.action.MEDIA_MOUNTED
+06-27 10:31:24.522: I/BootReceiver(1451): Got intent with action android.intent.action.MEDIA_SCANNER_FINISHED
+06-27 10:31:24.522: I/ActivityManager(1096): No longer want com.android.bluetooth (pid 1365): hidden #16
+06-27 10:31:24.577: D/Genie(1328): Request location failed, requesting data without location.
+06-27 10:31:24.577: D/Genie(1328): Requesting data...
+06-27 10:31:24.772: D/TIOMX_CORE(1013): init count = 1
+06-27 10:31:24.788: D/omx_interface(1013): TIOMXInterface: creating interface
+06-27 10:31:24.788: D/omx_interface(1013): Calling DLOPEN on OMX_CORE_LIBRARY (libOMX_Core.so)
+06-27 10:31:24.788: D/omx_interface(1013): DLOPEN SUCCEEDED (libOMX_Core.so)
+06-27 10:31:24.788: D/omx_interface(1013): TIOMXInterface: library lookup success
+06-27 10:31:24.796: D/TIOMX_CORE(1013): init count = 2
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.JPEG.Encoder' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.Video.Decoder' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.Video.encoder' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.MP3.decode' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.AAC.encode' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.AAC.decode' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.WMA.decode' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.WBAMR.decode' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.AMR.decode' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.AMR.encode' already exists, ignoring this one.
+06-27 10:31:24.796: E/(1013): A component of name 'OMX.TI.WBAMR.encode' already exists, ignoring this one.
+06-27 10:31:24.803: E/MediaPlayer(1244): Unable to to create media player
+06-27 10:31:24.811: D/MediaPlayer(1244): create failed:
+06-27 10:31:24.811: D/MediaPlayer(1244): java.io.IOException: setDataSourceFD failed.: status=0x80000000
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at android.media.MediaPlayer.setDataSource(Native Method)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at android.media.MediaPlayer.create(MediaPlayer.java:645)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at com.vzw.vvm.androidclient.ui.AudioPlayer.checkQCPPlayCapability(AudioPlayer.java:158)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at com.vzw.vvm.androidclient.ui.AudioPlayer.checkQCPRecordCapability(AudioPlayer.java:116)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at com.vzw.vvm.androidclient.ui.IntentLauncher.checkPreferredRecordFormat(IntentLauncher.java:480)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at com.vzw.vvm.androidclient.ui.VVMBroadcastReceiver$1.run(VVMBroadcastReceiver.java:171)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at android.os.Handler.handleCallback(Handler.java:587)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at android.os.Looper.loop(Looper.java:123)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at android.app.ActivityThread.main(ActivityThread.java:4627)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at java.lang.reflect.Method.invokeNative(Native Method)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at java.lang.reflect.Method.invoke(Method.java:521)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:858)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+06-27 10:31:24.811: D/MediaPlayer(1244): 	at dalvik.system.NativeStart.main(Native Method)
+06-27 10:31:24.819: E/MediaPlayer(1244): Unable to to create media player
+06-27 10:31:24.827: D/MediaPlayer(1244): create failed:
+06-27 10:31:24.827: D/MediaPlayer(1244): java.io.IOException: setDataSourceFD failed.: status=0x80000000
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at android.media.MediaPlayer.setDataSource(Native Method)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at android.media.MediaPlayer.create(MediaPlayer.java:645)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at com.vzw.vvm.androidclient.ui.AudioPlayer.checkQCPPlayCapability(AudioPlayer.java:158)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at com.vzw.vvm.androidclient.ui.IntentLauncher.checkPreferredAudioFormat(IntentLauncher.java:461)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at com.vzw.vvm.androidclient.ui.VVMBroadcastReceiver$1.run(VVMBroadcastReceiver.java:172)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at android.os.Handler.handleCallback(Handler.java:587)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at android.os.Looper.loop(Looper.java:123)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at android.app.ActivityThread.main(ActivityThread.java:4627)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at java.lang.reflect.Method.invokeNative(Native Method)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at java.lang.reflect.Method.invoke(Method.java:521)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:858)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+06-27 10:31:24.827: D/MediaPlayer(1244): 	at dalvik.system.NativeStart.main(Native Method)
+06-27 10:31:24.897: D/MediaScannerService(1258): start scanning volume external
+06-27 10:31:24.944: V/MediaProvider(1258): /mnt/sdcard volume ID: 808740454
+06-27 10:31:24.991: D/Genie(1328): Request failed at, 10:31am, June 27 next auto-refresh time =10800000
+06-27 10:31:25.124: D/Genie(1328): Commited FileCache, deleted 0 obselete files and kept 44 files.
+06-27 10:31:25.139: I/ActivityManager(1096): No longer want com.android.mms (pid 1371): hidden #16
+06-27 10:31:25.178: V/MediaProvider(1258): Attached volume: external
+06-27 10:31:25.374: D/(1258): found .nomedia, skipping directory
+06-27 10:31:25.514: D/MediaScanner(1258):  prescan time: 40ms
+06-27 10:31:25.514: D/MediaScanner(1258):     scan time: 295ms
+06-27 10:31:25.514: D/MediaScanner(1258): postscan time: 2ms
+06-27 10:31:25.514: D/MediaScanner(1258):    total time: 337ms
+06-27 10:31:25.530: I/BootReceiver(1451): Got intent with action android.intent.action.MEDIA_SCANNER_FINISHED
+06-27 10:31:25.538: D/MediaScannerService(1258): done scanning volume external
+06-27 10:31:25.546: I/ActivityManager(1096): No longer want com.google.android.deskclock (pid 1314): hidden #16
+06-27 10:31:26.397: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:31:26.397: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:31:42.639: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:31:42.639: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:31:58.883: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:31:58.883: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:32:07.917: W/ActivityManager(1096): Unable to start service Intent { act=com.motorola.motosync.service.intent.action.CHECK_PING flg=0x4 cmp=com.motorola.motosync/.service.EasService (has extras) }: not found
+06-27 10:32:15.116: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:32:15.116: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:32:24.860: D/Genie(1328): Can not get the location from network
+06-27 10:32:25.108: I/ActivityManager(1096): Start proc com.android.settings for broadcast com.android.settings/.widget.SettingsAppWidgetProvider: pid=1470 uid=1000 gids={3003, 3002, 3001}
+06-27 10:32:25.108: I/ActivityManager(1096): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher }
+06-27 10:32:25.139: D/PhoneWindow(1177): couldn't save which view has focus because the focused view android.widget.ScrollView@44753980 has no id.
+06-27 10:32:25.186: D/KeyguardViewMediator(1096): pokeWakelock(5000)
+06-27 10:32:25.186: D/StatusBar(1096): DISABLE_EXPAND: yes
+06-27 10:32:25.397: D/dalvikvm(1012): GC_EXPLICIT freed 291 objects / 11024 bytes in 259ms
+06-27 10:32:25.577: D/dalvikvm(1012): GC_EXPLICIT freed 52 objects / 2312 bytes in 170ms
+06-27 10:32:25.592: I/ActivityManager(1096): No longer want com.google.android.partnersetup (pid 1296): hidden #16
+06-27 10:32:25.624: D/dalvikvm(1012): GC_EXPLICIT freed 2 objects / 48 bytes in 44ms
+06-27 10:32:26.413: D/KeyguardViewMediator(1096): pokeWakelock(5000)
+06-27 10:32:26.624: D/KeyguardViewMediator(1096): pokeWakelock(5000)
+06-27 10:32:26.694: W/InputManagerService(1096): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@44852740 (uid=1001 pid=1177)
+06-27 10:32:28.405: D/dalvikvm(1179): GC_EXTERNAL_ALLOC freed 2489 objects / 115736 bytes in 43ms
+06-27 10:32:28.514: I/ActivityManager(1096): Start proc com.google.android.voicesearch for broadcast com.google.android.voicesearch/.logging.LoggingReceiver: pid=1476 uid=10004 gids={3003}
+06-27 10:32:28.608: I/ActivityThread(1476): Publishing provider com.google.android.voicesearch.VoiceSearchResultProvider: com.google.android.voicesearch.VoiceSearchResultProvider
+06-27 10:32:28.717: I/ActivityManager(1096): No longer want com.vzw.vvm.androidclient (pid 1244): hidden #16
+06-27 10:32:29.921: I/ActivityManager(1096): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.tomshiro.ada/.AdaMain }
+06-27 10:32:30.014: I/ActivityManager(1096): Start proc org.tomshiro.ada for activity org.tomshiro.ada/.AdaMain: pid=1487 uid=10056 gids={}
+06-27 10:32:31.358: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:32:31.366: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:32:31.366: I/dalvikvm(1096): Jit: resizing JitTable from 8192 to 16384
+06-27 10:32:31.546: I/ActivityManager(1096): Starting activity: Intent { cmp=org.tomshiro.ada/.InputActivity }
+06-27 10:32:31.671: D/AdaDB(1487): Created
+06-27 10:32:31.671: D/InputActivity(1487): loadSpinner
+06-27 10:32:31.671: D/AdaDB(1487): runListQuery
+06-27 10:32:31.694: D/InputActivity(1487): loadSpinner
+06-27 10:32:31.694: D/AdaDB(1487): runListQuery
+06-27 10:32:31.717: D/AdaDB(1487): runListQuery
+06-27 10:32:31.733: D/AdaDB(1487): runListQuery
+06-27 10:32:32.233: I/ActivityManager(1096): Displayed activity org.tomshiro.ada/.InputActivity: 655 ms (total 72095 ms)
+06-27 10:32:33.858: D/SntpClient(1096): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+06-27 10:32:33.905: D/SntpClient(1096): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+06-27 10:32:33.905: D/SntpClient(1096): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+06-27 10:32:35.796: I/WindowManager(1096): Setting rotation to 1, animFlags=0
+06-27 10:32:35.819: I/ActivityManager(1096): Config changed: { scale=1.0 imsi=310/4 loc=en_US touch=3 keys=2/1/2 nav=2/2 orien=2 layout=34 uiMode=17 seq=4}
+06-27 10:32:35.866: I/UsageStats(1096): Unexpected resume of org.tomshiro.ada while already resumed in org.tomshiro.ada
+06-27 10:32:35.874: D/PhoneWindow(1487): couldn't save which view has focus because the focused view android.widget.AutoCompleteTextView@4474e8e0 has no id.
+06-27 10:32:36.046: D/AdaDB(1487): Created
+06-27 10:32:36.046: D/InputActivity(1487): loadSpinner
+06-27 10:32:36.046: D/AdaDB(1487): runListQuery
+06-27 10:32:36.085: D/InputActivity(1487): loadSpinner
+06-27 10:32:36.085: D/AdaDB(1487): runListQuery
+06-27 10:32:36.116: D/AdaDB(1487): runListQuery
+06-27 10:32:36.147: D/AdaDB(1487): runListQuery
+06-27 10:32:36.186: D/dalvikvm(1096): GC_EXTERNAL_ALLOC freed 17310 objects / 879136 bytes in 163ms
+06-27 10:32:36.452: D/dalvikvm(1487): GC_FOR_MALLOC freed 4800 objects / 250632 bytes in 132ms
+06-27 10:32:38.757: D/dalvikvm(1096): GC_EXPLICIT freed 3009 objects / 146376 bytes in 98ms
+06-27 10:32:41.827: D/dalvikvm(1179): GC_EXPLICIT freed 801 objects / 32456 bytes in 153ms
+06-27 10:32:47.600: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:32:47.600: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:32:50.421: I/WindowManager(1096): Setting rotation to 0, animFlags=0
+06-27 10:32:50.421: I/ActivityManager(1096): Config changed: { scale=1.0 imsi=310/4 loc=en_US touch=3 keys=2/1/2 nav=2/2 orien=1 layout=34 uiMode=17 seq=5}
+06-27 10:32:50.467: D/PhoneWindow(1487): couldn't save which view has focus because the focused view android.widget.AutoCompleteTextView@447753e8 has no id.
+06-27 10:32:50.467: I/UsageStats(1096): Unexpected resume of org.tomshiro.ada while already resumed in org.tomshiro.ada
+06-27 10:32:50.639: D/AdaDB(1487): Created
+06-27 10:32:50.639: D/InputActivity(1487): loadSpinner
+06-27 10:32:50.639: D/AdaDB(1487): runListQuery
+06-27 10:32:50.671: D/InputActivity(1487): loadSpinner
+06-27 10:32:50.671: D/AdaDB(1487): runListQuery
+06-27 10:32:50.702: D/AdaDB(1487): runListQuery
+06-27 10:32:50.741: D/AdaDB(1487): runListQuery
+06-27 10:32:53.061: D/dalvikvm(1096): GC_EXPLICIT freed 897 objects / 50064 bytes in 93ms
+06-27 10:33:03.843: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:33:03.843: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:33:10.725: D/dalvikvm(1214): GC_EXPLICIT freed 2881 objects / 232416 bytes in 76ms
+06-27 10:33:20.085: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:33:20.085: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:33:36.327: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:33:36.327: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:33:46.671: I/dalvikvm(1096): Total arena pages for JIT: 11
+06-27 10:33:51.405: D/dalvikvm(1441): Debugger has detached; object registry had 1 entries
+06-27 10:33:51.405: D/dalvikvm(1487): Debugger has detached; object registry had 1 entries
+06-27 10:33:52.571: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:33:52.571: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:34:08.811: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:34:08.811: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:34:12.444: I/ActivityManager(1096): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher }
+06-27 10:34:12.452: D/PhoneWindow(1487): couldn't save which view has focus because the focused view android.widget.AutoCompleteTextView@447454b0 has no id.
+06-27 10:34:12.475: W/InputManagerService(1096): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@448eb788
+06-27 10:34:12.632: W/IInputConnectionWrapper(1487): showStatusIcon on inactive InputConnection
+06-27 10:34:12.694: I/ActivityManager(1096): No longer want com.android.providers.calendar (pid 1397): hidden #16
+06-27 10:34:22.444: D/dalvikvm(1470): GC_EXPLICIT freed 1209 objects / 81376 bytes in 76ms
+06-27 10:34:25.054: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:34:25.054: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:34:32.663: D/dalvikvm(1487): GC_EXPLICIT freed 4876 objects / 244960 bytes in 66ms
+06-27 10:34:41.298: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:34:41.298: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:34:57.538: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:34:57.553: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:35:13.786: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:35:13.788: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:35:30.032: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:35:30.032: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:35:46.276: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:35:46.280: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:35:57.483: I/ActivityManager(1096): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.tomshiro.ada/.AdaMain }
+06-27 10:36:02.522: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:36:02.522: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:36:09.936: D/dalvikvm(1476): GC_EXPLICIT freed 1445 objects / 102784 bytes in 71ms
+06-27 10:36:12.147: I/WindowManager(1096): Setting rotation to 1, animFlags=0
+06-27 10:36:12.171: I/ActivityManager(1096): Config changed: { scale=1.0 imsi=310/4 loc=en_US touch=3 keys=2/1/2 nav=2/2 orien=2 layout=34 uiMode=17 seq=6}
+06-27 10:36:12.217: I/UsageStats(1096): Unexpected resume of org.tomshiro.ada while already resumed in org.tomshiro.ada
+06-27 10:36:12.241: D/PhoneWindow(1487): couldn't save which view has focus because the focused view android.widget.AutoCompleteTextView@447454b0 has no id.
+06-27 10:36:12.366: D/AdaDB(1487): Created
+06-27 10:36:12.366: D/InputActivity(1487): loadSpinner
+06-27 10:36:12.366: D/AdaDB(1487): runListQuery
+06-27 10:36:12.397: D/InputActivity(1487): loadSpinner
+06-27 10:36:12.405: D/AdaDB(1487): runListQuery
+06-27 10:36:12.436: D/AdaDB(1487): runListQuery
+06-27 10:36:12.475: D/AdaDB(1487): runListQuery
+06-27 10:36:14.819: D/dalvikvm(1096): GC_EXPLICIT freed 8865 objects / 386640 bytes in 105ms
+06-27 10:36:15.296: D/InputActivity(1487): isFirstTouch
+06-27 10:36:15.296: D/InputActivity(1487): isFirstTouch: retVal=true
+06-27 10:36:15.296: D/AdaDB(1487): find_fencer
+06-27 10:36:15.319: D/AdaDB(1487): find_fencer
+06-27 10:36:15.335: D/AdaDB(1487): createBout
+06-27 10:36:15.350: D/AdaDB(1487): createBout RetVal:14
+06-27 10:36:15.350: D/InputActivity(1487): which_scored
+06-27 10:36:18.764: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:36:18.764: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:36:19.757: W/KeyCharacterMap(1487): Can't open keycharmap file
+06-27 10:36:19.757: W/KeyCharacterMap(1487): Error loading keycharmap file '/system/usr/keychars/qtouch-touchscreen.kcm.bin'. hw.keyboards.65538.devname='qtouch-touchscreen'
+06-27 10:36:19.757: W/KeyCharacterMap(1487): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+06-27 10:36:19.866: W/InputManagerService(1096): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@44914ec8
+06-27 10:36:28.014: I/dalvikvm(1487): Jit: resizing JitTable from 4096 to 8192
+06-27 10:36:29.764: W/InputManagerService(1096): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@44794a28
+06-27 10:36:30.858: D/dalvikvm(1487): GC_FOR_MALLOC freed 8815 objects / 455304 bytes in 51ms
+06-27 10:36:30.921: E/Cursor(1487): Finalizing a Cursor that has not been deactivated or closed. database = /data/data/org.tomshiro.ada/databases/ada.db, table = null, query = select _id from Bout where lfencerfk = (select _id from Fencer where fencername = ?) and rfencerfk =
+06-27 10:36:30.921: E/Cursor(1487): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+06-27 10:36:30.921: E/Cursor(1487): 	at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1315)
+06-27 10:36:30.921: E/Cursor(1487): 	at org.tomshiro.ada.AdaDB.createBout(AdaDB.java:59)
+06-27 10:36:30.921: E/Cursor(1487): 	at org.tomshiro.ada.InputActivity.createBout(InputActivity.java:128)
+06-27 10:36:30.921: E/Cursor(1487): 	at org.tomshiro.ada.InputActivity.onCommitClick(InputActivity.java:201)
+06-27 10:36:30.921: E/Cursor(1487): 	at java.lang.reflect.Method.invokeNative(Native Method)
+06-27 10:36:30.921: E/Cursor(1487): 	at java.lang.reflect.Method.invoke(Method.java:521)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.view.View$1.onClick(View.java:2067)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.view.View.performClick(View.java:2408)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.view.View$PerformClick.run(View.java:8816)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.os.Handler.handleCallback(Handler.java:587)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.os.Looper.loop(Looper.java:123)
+06-27 10:36:30.921: E/Cursor(1487): 	at android.app.ActivityThread.main(ActivityThread.java:4627)
+06-27 10:36:30.921: E/Cursor(1487): 	at java.lang.reflect.Method.invokeNative(Native Method)
+06-27 10:36:30.921: E/Cursor(1487): 	at java.lang.reflect.Method.invoke(Method.java:521)
+06-27 10:36:30.921: E/Cursor(1487): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:858)
+06-27 10:36:30.921: E/Cursor(1487): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+06-27 10:36:30.921: E/Cursor(1487): 	at dalvik.system.NativeStart.main(Native Method)
+06-27 10:36:32.514: W/InputManagerService(1096): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@44955f10
+06-27 10:36:34.975: D/InputActivity(1487): isFirstTouch
+06-27 10:36:34.975: D/InputActivity(1487): isFirstTouch: retVal=true
+06-27 10:36:34.975: D/AdaDB(1487): find_fencer
+06-27 10:36:34.991: D/AdaDB(1487): find_fencer
+06-27 10:36:35.007: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:36:35.007: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:36:35.022: D/AdaDB(1487): createBout
+06-27 10:36:35.038: D/AdaDB(1487): createBout RetVal:15
+06-27 10:36:35.038: D/InputActivity(1487): which_scored
+06-27 10:36:35.038: D/InputActivity(1487): insert_touches
+06-27 10:36:35.046: D/InputActivity(1487):  lTouchScored:true rTouchScored:false lTouchActionSeq:1 rTouchActionSeq:2 touch_sequence:1
+06-27 10:36:35.046: D/AdaDB(1487): add_touch
+06-27 10:36:38.968: I/WindowManager(1096): Setting rotation to 0, animFlags=0
+06-27 10:36:38.975: I/ActivityManager(1096): Config changed: { scale=1.0 imsi=310/4 loc=en_US touch=3 keys=2/1/2 nav=2/2 orien=1 layout=34 uiMode=17 seq=7}
+06-27 10:36:39.014: D/PhoneWindow(1487): couldn't save which view has focus because the focused view android.widget.AutoCompleteTextView@44714fb0 has no id.
+06-27 10:36:39.014: I/UsageStats(1096): Unexpected resume of org.tomshiro.ada while already resumed in org.tomshiro.ada
+06-27 10:36:39.186: D/AdaDB(1487): Created
+06-27 10:36:39.186: D/InputActivity(1487): loadSpinner
+06-27 10:36:39.186: D/AdaDB(1487): runListQuery
+06-27 10:36:39.217: D/InputActivity(1487): loadSpinner
+06-27 10:36:39.217: D/AdaDB(1487): runListQuery
+06-27 10:36:39.257: D/AdaDB(1487): runListQuery
+06-27 10:36:39.288: D/AdaDB(1487): runListQuery
+06-27 10:36:41.585: D/dalvikvm(1096): GC_EXPLICIT freed 3439 objects / 192800 bytes in 95ms
+06-27 10:36:44.553: D/dalvikvm(1179): GC_EXPLICIT freed 1363 objects / 77384 bytes in 64ms
+06-27 10:36:50.889: D/dalvikvm(1214): GC_EXPLICIT freed 1429 objects / 72496 bytes in 67ms
+06-27 10:36:51.249: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:36:51.249: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:37:07.491: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:37:07.491: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:37:23.733: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:37:23.733: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]
+06-27 10:37:39.976: I/wpa_supplicant(1160): WPS-AP-AVAILABLE 
+06-27 10:37:39.976: V/WifiMonitor(1096): Event [WPS-AP-AVAILABLE ]

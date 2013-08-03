@@ -1,0 +1,12 @@
+<Screen>
+
+<Label type="Header" text="Everything"/>
+
+<Label type="SubHeader" text = "Everything for %s number %d">
+    <Param seq="1" otype="String" ref="A_Fencer_name"/>
+    <Param seq="2" otype="Integer" ref="A_Number"/>
+</Label>
+
+<Label type="InfoHeader" text="A_Fencer_name|An_Action_type|A_Number|A_Boolean|A_Duration"/>
+
+</Screen>

@@ -1,0 +1,49 @@
+<project default="main">
+<property name="classdir" location="classes"/>
+<property name="mainjar" value="./tester.jar"/> 
+<property name="argValPctTest" value="Hello %% World %%%%"/>
+<property name="argValStrTest" value="Hello %% world %s"/>
+<property name="argValStrDecTest" value="Hello %% world %s %d"/>
+<property name="argValStrDecFloatTest" value="Hello %% world %s %% %d %f %%"/>
+<property name="argValStrDecFloatSTRTest" value="%%Hello %% world %s %% %d %f %% %S %%"/>
+   <target name="main" depends="compile,compress,run">
+     <echo>Building jar file..</echo>
+   </target>
+
+   <target name = "compile">
+      <mkdir dir="${classdir}"/>
+      <javac srcdir="src" destdir="${classdir}" includeantruntime="false" debug="on" />
+   </target>
+
+   <target name="compress">
+       <jar jarfile="${mainjar}" basedir="${classdir}">
+            <manifest>
+	      <attribute name="Author" value="Charles Shapiro"/>
+              <attribute name="Main-Class" value="org.tomshiro.ada.main"/>
+            </manifest>
+       </jar>
+   </target>
+   <target name="run">
+      <echo>Arg Value: ${argValPctTest}</echo>
+      <java jar="${mainjar}" fork="true">
+	<arg value="${argValPctTest}"/>
+      </java>
+      <echo>Arg Value: ${argValStrTest}</echo>
+      <java jar="${mainjar}" fork="true">
+	<arg value="${argValStrTest}"/>
+      </java>
+      <java jar="${mainjar}" fork="true">
+	<arg value="${argValStrDecTest}" />
+      </java>
+      <java jar="${mainjar}" fork="true">
+	<arg value="${argValStrDecFloatTest}"/>
+      </java>
+      <java jar="${mainjar}" fork="true">
+	<arg value="${argValStrDecFloatSTRTest}"/>
+      </java>
+   </target>   
+   <target name="clean">
+      <delete file="${mainjar}"/>
+      <delete dir="${classdir}/org"/>
+   </target>
+</project>

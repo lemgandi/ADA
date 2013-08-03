@@ -1,0 +1,9 @@
+<Screen>
+<Label type="Header" text="Received Touches by Fencer by Type"/>
+
+
+
+<InputField label="Fencer Name" type="Fencer" seq="1" name="Fencername" />
+
+</Screen>
+

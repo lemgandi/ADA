@@ -1,0 +1,11 @@
+<Screen>
+<Label type="Header" text="Everything"/>
+
+<InputField type="Fencer" label="Fencer Name" seq="1" name="A_Fencer_name" />
+<InputField type="Action" label="Action Type" seq="2" name="An_Action_type" />
+<InputField type="Integer" label="Number" seq="3" name="A_Number" />
+<InputField type="Boolean" label="Boolean" seq="4" name="A_Boolean"/>
+<InputField type="Duration" label="Duration" seq="5" height="150" name="A_Duration"/>
+
+</Screen>
+

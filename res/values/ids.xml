@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="FirstInputSlotID" type="id"/>
+    <item name="FirstInputViewID" type="id"/>
+    <item name="ViewNameTag" type = "id"/>
+    <item name="ViewTypeTag" type="id"/>
+    <item name="SubmitButton" type="id"/>
+    <item name="QuitButton" type="id"/>
+</resources>

@@ -1,0 +1,11 @@
+<Screen>
+<Label type="Header" text="Received Touches by Fencer by Type"/>
+
+
+<InputField type="Fencer" label="Fencer Receiving" seq="1" name="Fencername_1" />
+
+
+<InputField type="Fencer" label="Fencer Scoring" seq="2" name="Fencername_2"/>
+
+</Screen>
+

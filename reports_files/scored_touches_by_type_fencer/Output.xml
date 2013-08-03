@@ -1,0 +1,12 @@
+<Screen>
+
+<Label type="Header" text="Scored Touches by Fencer / Type"/>
+
+<Label type="SubHeader" text="Scored Touches for %s">
+<Param seq="1" otype="String" ref="Fencername"/>
+</Label>
+
+<Label type="InfoHeader" text = "Count    |   Action"/>
+
+
+</Screen>

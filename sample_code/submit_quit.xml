@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/submit_quit_vsize"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:layout_weight="0"
+    >
+
+    <Button
+        android:id="@+id/SubmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="DoSubmit"
+        android:text="@string/SubmitButton"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_weight="0" />
+ 
+    <Button
+        android:id="@+id/QuitButton"
+           android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/QuitButton"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:onClick="DoQuit"
+        android:layout_weight="0"
+        />
+</LinearLayout>

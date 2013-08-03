@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/New_bout" android:menuCategory="system" android:title="@string/NewBout">
+        
+    </item>
+    <item android:id="@+id/Finish_bout" android:menuCategory="system" android:title="@string/FinishBout">
+    
+    </item>
+    <item android:id="@+id/Start_bout" android:menuCategory="system" android:title="@string/StartBout">
+        
+    </item>
+    
+
+</menu>

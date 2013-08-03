@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ADA</string>
+    <string name="menu_settings">Settings</string>
+    <string name="main_header">Athlete Data Analysis</string>
+    <string name="input_label">Input</string>
+    <string name="main_report_button_label">Report</string>
+    <string name="reporting_head">Athlete Data Analysis Reports</string>
+    <string name="input_head">Athlete Data Analysis Input</string>
+    <string name="scorebuttonlabel">Scored</string>
+    <string name="report_button_label">Run</string>
+    <string name="commitbuttonlabel">Commit</string>
+    <string name="clearbuttonlabel">Clear</string>
+    <string name="RScoreDispLabel">Right Score:</string>
+    <string name="LScoreDispLabel">Left Score:</string>
+    <string name="newbuttonlabel">New</string>
+    <string name="LFencerLabel">Left</string>
+    <string name="RFencerLabel">Right</string>
+    <string name="NoScoreTitle">No Score</string>
+    <string name="NoScoreMessage">Please check one or both score boxes.</string>
+    <string name="NoActionTitle">No Action Entered</string>
+    <string name="LeftActionNotEntered">Pick an action from the LEFT drop-down menu</string>
+    <string name="RightActionNotEntered">Pick an action from the RIGHT drop-down menu</string>
+    <string name="BothActionNotEntered">Pick actions from BOTH drop-down menus</string>
+    <string name="ExitChoice">Exit ADA</string>
+    <string name="NewBout">New Bout</string>
+    <string name="StartBout">Start Bout</string>
+    <string name="FinishBout">Finish</string>
+    <string name="NoFencerTitle">Fencer Name Missing</string>
+    <string name="BothFencerMissingMessage">Please fill in both fencer names</string>
+    <string name="LeftFencerMissingMessage">Please fill in the left fencer name</string>
+    <string name="RightFencerMissingMessage">Please fill in the right fencer name</string>
+    <string name="NoBoutTitle">No bout started</string>
+    <string name="NoBoutMessage">Please start the bout in the options menu before entering touches</string>
+    <string name="NoReportTitle">No report chosen</string>
+    <string name="NoReportMessage">Please choose a report</string>
+    <string name="title_activity_report_setup">Input Report Values</string>
+    <string name="action_settings">Settings</string>
+    <string name="ReportSetupHeader">Input Values</string>
+    <string name="BadRptDirTitle">Missing files in Report Directory</string>
+    <string name="BadRptDirMessage">I must have an Input.xml,an Output.xml,and a Query.xml there.</string>
+    <string name="SubmitButton">Run</string>
+    <string name="QuitButton">Quit</string>
+    <string name="title_activity_report_display">ReportDisplayActivity</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="No_Data">No Results Found.</string>
+</resources>

@@ -1,0 +1,53 @@
+Ideas for the Next Version
+Charles Shapiro 
+15 July 2013
+
+
+* Fix input hole 
+
+  Extend db to add Action/Response/Both domain for Action_type.  Use
+  this to alter the spinner choice lists on the 2nd entered spinner so if
+  you choose an Action on one you can only choose Response/Both on the
+  other or vice versa.  Thus it becomes impossible to enter a scoring
+  action where both fencers retreat, for example.
+
+* Add histograms
+
+  Add a Histogram report display file to Reports/report_name. Display
+  "Histogram" button on ReportActivity.  Error politely if
+  Reports/Report_name/Histogram.xml is not present. It might be fun to have pie charts as well.
+
+* Add database merge
+
+  Add the ability to pull records from a 2nd database, so that a
+  coach(say) could pull data from a minions' phone and add it to his
+  own database.
+
+* Add Foil Mode to parameters
+
+  Add the ability to disable double-touches in the input screen, so
+  that you could not enter them in foil/saber bouts.
+
+* Add Security Option
+
+  Add ability to keep database on phone memory, so it could be
+  private if necessary.
+
+* Add database maintenance
+
+  Add editors for all tables under button on main screen.
+
+* Write a reportLint python script
+
+  This script will check Input.xml, Output.xml, and Query.xml for XML correctitude, and check that the "name" attribs in 
+  the <InputField> nodes in "Input" have corresponding <Param ref=""> nodes in "Query".  
+  
+* Clear database and reports directories on uninstall
+
+* Create XML Schemas ( http://www.w3schools.com/schema/ ) for all Report xml files.
+  
+  Figure out how namespaces and all the rest of that wild & crazy XML stuff is supposed to work.
+  
+* Add README file with pointer to more doc to /mnt/sdcard/org.tomshiro.ada .
+  
+
