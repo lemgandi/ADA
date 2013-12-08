@@ -18,6 +18,7 @@ import android.content.Context;
 import android.widget.RadioButton;
 import android.widget.Button;
 import android.widget.TimePicker;
+import android.widget.EditText;
 import android.util.Log;
 import android.util.AttributeSet;
 import android.content.res.Resources;
@@ -26,13 +27,14 @@ import org.xmlpull.v1.XmlPullParser;
 import android.util.Xml;
 import android.widget.ArrayAdapter;
 import java.util.HashMap;
+import android.widget.HorizontalScrollView;
 
 
 // Given an xml node, construct a view from it
 
 public class NodeViewFactory  {
 	static final String TAG = "NodeViewFactory";
-//TODO: Future viewTypes: Duration (hh:mm:ss), DateTime (MM-DD-YY hh:mm:ss),Text(mush), id (integer ranged to primary key of a given table)
+//TODO: Future viewTypes:DateTime (MM-DD-YY hh:mm:ss),Text(mush), id (spinner primary key of given table)
 	
 	
 	
@@ -41,7 +43,7 @@ public class NodeViewFactory  {
 	AdaDB myDbHelper = null;
 	Resources myResources=null;
 	ViewFiller myDomainFiller = null;
-	AttributeSet linearLayoutAttribs;
+	AttributeSet RelativeLayoutAttribs;
 	// Used only by makeSlot.  Cannot put it inside the method body. Bummer.
 	private static int last_assigned_slot_id=0;
 	private static int last_assigned_view_id=0;
@@ -69,8 +71,8 @@ private void fillAttribs()
            e1.printStackTrace();
        }       
        if (state == XmlPullParser.START_TAG) {
-           if (pullParser.getName().equals("LinearLayout")) {
-               linearLayoutAttribs = Xml.asAttributeSet(pullParser);
+           if (pullParser.getName().equals("RelativeLayout")) {
+               RelativeLayoutAttribs = Xml.asAttributeSet(pullParser);
                break;
            }
        }
@@ -79,11 +81,11 @@ private void fillAttribs()
 /*
  * Make container for input
  */
-private LinearLayout makeSlot(int height)
+private RelativeLayout makeSlot(int height)
 {	
-	LinearLayout retVal = new LinearLayout(myContext,linearLayoutAttribs);
+	RelativeLayout retVal = new RelativeLayout(myContext,RelativeLayoutAttribs);
 	// RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)retVal.getLayoutParams();
-	RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(myContext,linearLayoutAttribs);
+	RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(myContext,RelativeLayoutAttribs);
 	if(height != 0)
 		params.height=height;
 	Log.d(TAG,"makeSlot: params="+params);
@@ -107,33 +109,56 @@ private LinearLayout makeSlot(int height)
 	return retVal;
 }
 
-
-private View makeDurationView(String label,String name,int height)
+private RelativeLayout.LayoutParams[] makeLayouts(int position,int label_id)
 {
-	Log.d(TAG,"makeDurationView");
+	RelativeLayout.LayoutParams[] retVal = new RelativeLayout.LayoutParams[2];
+	retVal[0]=new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+	retVal[0].addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+	retVal[1]=new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+	if(RelativeLayout.ABOVE == position)
+	{
+		retVal[1].addRule(RelativeLayout.BELOW,label_id);
+		retVal[1].addRule(RelativeLayout.ALIGN_LEFT,label_id);
+	}
+	else
+		retVal[1].addRule(RelativeLayout.RIGHT_OF,label_id);
+	return retVal;
+	
+}
+private View makeIntervalView(String label,String name,Integer[] childIds,int height,int labelPos)
+{
+	Log.d(TAG,"makeIntervalView");
 	View retVal = null;
-	LinearLayout myLayout = this.makeSlot(height);
+	RelativeLayout myLayout = this.makeSlot(height);
+	
 	TextView labelText = new TextView(myContext);
 	labelText.setTag(R.id.ViewTypeTag,Integer.valueOf(ViewTypeParser.LabelView));
-	labelText.setText(label);
-	myLayout.addView(labelText);
-	TimePicker timePickerView = new TimePicker(myContext);
-	timePickerView.setIs24HourView(true);
-	this.assignID(timePickerView, name, ViewTypeParser.InputDurationView);
-	myLayout.addView(timePickerView);
+	labelText.setText(label+' ');
+	labelText.setId(last_assigned_slot_id+22);
+	RelativeLayout.LayoutParams[] layouts=makeLayouts(labelPos,labelText.getId());
+	myLayout.addView(labelText,layouts[0]);
+	
+	IntervalView myIntervalView=new IntervalView(myContext);
+	myIntervalView.set_child_ids(childIds);
+	this.assignID(myIntervalView,name,ViewTypeParser.InputIntervalView);
+	
+	myLayout.addView(myIntervalView,layouts[1]);
+	
 	retVal = myLayout;
 	return retVal;
 	
 }
-private View makeDomainView(int type,String label,String name,int height)
+private View makeDomainView(int type,String label,String name,int height,int labelPos)
 {
 	Log.d(TAG,"makeDomainView");
 	View retVal = null;
-	LinearLayout myLayout=this.makeSlot(height);	
+	RelativeLayout myLayout=this.makeSlot(height);	
 	TextView labelText = new TextView(myContext);
 	labelText.setTag(R.id.ViewTypeTag,Integer.valueOf(ViewTypeParser.LabelView));
 	labelText.setText(label);
-	myLayout.addView(labelText);
+	labelText.setId(last_assigned_slot_id+22);
+	RelativeLayout.LayoutParams[] layouts=makeLayouts(labelPos,labelText.getId());
+	myLayout.addView(labelText,layouts[0]);
 	Spinner domainSpinner = new Spinner(myContext);
 	int fillType = 0;
 	switch(type)
@@ -147,10 +172,11 @@ private View makeDomainView(int type,String label,String name,int height)
 	}
 	this.assignID(domainSpinner,name,type);
 	myDomainFiller.fill_view(domainSpinner,fillType,myDbHelper,myContext);
-	myLayout.addView(domainSpinner);
+	myLayout.addView(domainSpinner,layouts[1]);
 	retVal = myLayout;
 	return retVal;
 }
+
 private void assignID(View v,String name,int viewType)
 {
 	Log.d(TAG,"assignID");
@@ -166,14 +192,16 @@ private void assignID(View v,String name,int viewType)
 	v.setTag(R.id.ViewTypeTag,Integer.valueOf(viewType));
 }
 
-private View makeIntegerView(String label,String name,int limit,int height)
+private View makeIntegerView(String label,String name,int limit,int height,int labelPos)
 {
 	View retVal = null;
-	LinearLayout myLayout=this.makeSlot(height);
+	RelativeLayout myLayout=this.makeSlot(height);
 	TextView labelText=new TextView(myContext);
 	labelText.setText(label);
+	labelText.setId(last_assigned_view_id+22);
+	RelativeLayout.LayoutParams[] layouts=makeLayouts(labelPos,labelText.getId());
 	labelText.setTag(R.id.ViewTypeTag,Integer.valueOf(ViewTypeParser.LabelView));
-	myLayout.addView(labelText);
+	myLayout.addView(labelText,layouts[0]);
 	
 	//NumberPicker added API 11
 	Spinner numberSpinner = new Spinner(myContext);
@@ -184,49 +212,86 @@ private View makeIntegerView(String label,String name,int limit,int height)
 			numberList.toArray(new String[0]));
 	numberSpinner.setAdapter(numberSpinnerAdapter);
 	this.assignID(numberSpinner,name,ViewTypeParser.InputIntegerView);
-	myLayout.addView(numberSpinner);
+	myLayout.addView(numberSpinner,layouts[1]);
 	retVal=myLayout;
 	return retVal;
 	
 }
-private View makeBooleanView(String label,String name,int height)
+private View makeTextView(String label,String name,boolean quoted,String defaultText,int height,int labelPos)
+{
+	View retVal=null;
+	RelativeLayout myLayout = this.makeSlot(height);
+	TextView labelText = new TextView(myContext);
+	labelText.setTag(R.id.ViewTypeTag,Integer.valueOf(ViewTypeParser.LabelView));
+	labelText.setText(label+" ");
+	labelText.setId(last_assigned_slot_id + 22);
+	RelativeLayout.LayoutParams[] layouts = makeLayouts(labelPos,labelText.getId());
+	myLayout.addView(labelText,layouts[0]);
+	TextView myTextView = new EditText(myContext);
+	myTextView.setText(defaultText);
+	myTextView.setTag(R.id.should_be_quoted,(Boolean)quoted);
+	this.assignID(myTextView,name,ViewTypeParser.InputTextView);
+	myLayout.addView(myTextView,layouts[1]);
+	retVal = myLayout;
+	return retVal;
+}
+private View makeBooleanView(String label,String name,int height,int labelPos)
 {
 	View retVal = null;
-	LinearLayout myLayout=this.makeSlot(height);
+	RelativeLayout myLayout=this.makeSlot(height);
 	TextView labelText = new TextView(myContext);
 	labelText.setTag(R.id.ViewTypeTag,Integer.valueOf(ViewTypeParser.LabelView));
 	labelText.setText(label);
-	myLayout.addView(labelText);
+	labelText.setId(last_assigned_slot_id+22);
+	RelativeLayout.LayoutParams[] layouts=makeLayouts(labelPos,labelText.getId());
+	myLayout.addView(labelText,layouts[0]);
 	RadioButton myCheckBox = new RadioButton(myContext);
 	this.assignID(myCheckBox,name,ViewTypeParser.InputBooleanView);
-	myLayout.addView(myCheckBox);
+	myLayout.addView(myCheckBox,layouts[1]);
 	retVal=myLayout;
 	return retVal;
 }
-
+private View makeIdView(String label,String name,String table_name,int height,int labelPos)
+{
+	View retVal = null;
+	RelativeLayout myLayout=this.makeSlot(height);
+	TextView labelText = new TextView(myContext);
+	labelText.setTag(R.id.ViewTypeTag,Integer.valueOf(ViewTypeParser.LabelView));
+	labelText.setText(label);
+	labelText.setId(last_assigned_slot_id+22);
+	RelativeLayout.LayoutParams[] layouts = makeLayouts(labelPos,labelText.getId());
+	myLayout.addView(labelText,layouts[0]);
+	Spinner myIdSpinner = new Spinner(myContext);
+	myDomainFiller.fill_id_view(myIdSpinner,table_name,myDbHelper,myContext);
+	this.assignID(myIdSpinner,name,ViewTypeParser.InputIdView);
+	myLayout.addView(myIdSpinner,layouts[1]);
+	
+	retVal=myLayout;
+	return retVal;	
+}
 private View makeSubmitQuit()
 {
 	Log.d(TAG,"makeSubmitQuit");
 	View retVal = null;
 	
-	LinearLayout myLayout=this.makeSlot(0);
-	Button submitButton = new Button(myContext,linearLayoutAttribs);
+	RelativeLayout myLayout=this.makeSlot(0);
+	Button submitButton = new Button(myContext,RelativeLayoutAttribs);
 	submitButton.setText("Report");
 	
-	Button quitButton = new Button(myContext,linearLayoutAttribs);
+	Button quitButton = new Button(myContext,RelativeLayoutAttribs);
 	quitButton.setText("Quit");
 	Log.d(TAG,"makeSubmitQuit: buttons created");
 	
 	RelativeLayout.LayoutParams alignParams;
 	
 	// this.assignID(submitButton,"Submit",0);
-	alignParams = new android.widget.RelativeLayout.LayoutParams(R.dimen.input_element_hsize,R.dimen.input_element_vsize);
+	alignParams = new android.widget.RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
 	alignParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
 	submitButton.setLayoutParams(alignParams);
 	submitButton.setId(R.id.SubmitButton);
 	Log.d(TAG,"makeSubmitQuit: submitbutton layout");
 	
-	alignParams = new android.widget.RelativeLayout.LayoutParams(R.dimen.input_element_hsize,R.dimen.input_element_vsize);
+	alignParams = new android.widget.RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
 	alignParams.addRule(RelativeLayout.RIGHT_OF,submitButton.getId());
 	quitButton.setLayoutParams(alignParams);
 	quitButton.setId(R.id.QuitButton);
@@ -272,21 +337,27 @@ private View makeViewFromNode(Node theNode)
 	Log.d(TAG,"Node seq:"+theElement.getAttribute("seq"));
 	Log.d(TAG,"Node name:"+theElement.getAttribute("name"));
     int viewType = 0;
+    int labelPosition=RelativeLayout.RIGHT_OF;
     
     int viewHeight=0;
     if(theElement.hasAttribute("height"))    
     	viewHeight = Integer.parseInt(theElement.getAttribute("height"));
-    
+    if(theElement.hasAttribute("position"))
+    {
+    	String thePosition=theElement.getAttribute("position");
+    	if(thePosition.equals("above"))
+    		labelPosition=RelativeLayout.ABOVE;
+    }
     viewType = VTypeParser.getViewType(theElement.getAttribute("type"));
     
     switch(viewType)
     {
     case ViewTypeParser.InputActionView:
     case ViewTypeParser.InputFencerView:
-    	retVal = makeDomainView(viewType,theElement.getAttribute("label"),theElement.getAttribute("name"),viewHeight);
+    	retVal = makeDomainView(viewType,theElement.getAttribute("label"),theElement.getAttribute("name"),viewHeight,labelPosition);
     	break;
     case ViewTypeParser.InputBooleanView:
-    	retVal=makeBooleanView(theElement.getAttribute("label"),theElement.getAttribute("name"),viewHeight);
+    	retVal=makeBooleanView(theElement.getAttribute("label"),theElement.getAttribute("name"),viewHeight,labelPosition);
     	break;
     case ViewTypeParser.InputIntegerView:
     	int limit=99;
@@ -295,15 +366,48 @@ private View makeViewFromNode(Node theNode)
     		String limitStr=theElement.getAttribute("limit");
     		limit=Integer.parseInt(limitStr);	
     	}
-    	retVal=makeIntegerView(theElement.getAttribute("label"),theElement.getAttribute("name"),limit,viewHeight);
+    	retVal=makeIntegerView(theElement.getAttribute("label"),theElement.getAttribute("name"),limit,viewHeight,labelPosition);
     	break;
-    case ViewTypeParser.InputDurationView:
-    	retVal=makeDurationView(theElement.getAttribute("label"),theElement.getAttribute("name"),viewHeight);
+    case ViewTypeParser.InputIntervalView:
+    	
+    	Integer[] childIds = get_intervalview_child_ids(theElement.getAttribute("maxMeasure"));
+    	
+    	retVal=makeIntervalView(theElement.getAttribute("label"),theElement.getAttribute("name"),
+    		childIds,viewHeight,labelPosition);
     	break;
+    case ViewTypeParser.InputTextView:
+    	boolean quoted=false;
+    	String defaultText="";
+    	if(theElement.hasAttribute("quotes"))
+    	{
+    		if ("true".equals(theElement.getAttribute("quotes")))
+    			quoted=true;
+    	}
+    	if (theElement.hasAttribute("default"))
+    		defaultText=theElement.getAttribute("default");
+    	retVal=makeTextView(theElement.getAttribute("label"),theElement.getAttribute("name"),quoted,defaultText,viewHeight,labelPosition);
+    	break;
+    case ViewTypeParser.InputIdView:
+    	String table_name=theElement.getAttribute("table");
+    	retVal=makeIdView(theElement.getAttribute("label"),theElement.getAttribute("name"),table_name,viewHeight,labelPosition);
     }
 	return retVal;
 }
-
+private Integer[] get_intervalview_child_ids(String maxMeasure)
+{
+	
+	int maxMeasureInt=VTypeParser.getIntervalType(maxMeasure);
+	Integer[] retVal = new Integer[IntervalView.MaxInterval];
+	for(int kk=0;kk<IntervalView.MaxInterval;++kk)
+	{
+		if(kk < maxMeasureInt)
+			retVal[kk] = -1;
+		else
+			retVal[kk]=last_assigned_slot_id+kk;
+	}
+		
+	return retVal;
+}
 
 public Object parseParm(Node n,HashMap<String,Object>theMap)
 {
@@ -331,9 +435,7 @@ public Object parseParm(Node n,HashMap<String,Object>theMap)
 	case ViewTypeParser.LongType:
 		retVal=Long.valueOf(valStr);
 		break;
-	case ViewTypeParser.SecsType:
-		retVal=Long.valueOf(valStr);
-	}
+		}
 	return retVal;
 }
 	// Main entry point

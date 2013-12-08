@@ -19,14 +19,16 @@
         android:id="@+id/Left_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.8" 
-         custom:internalId="@+id/ComboboxTextboxIdLeft"
+        android:layout_weight="0.8"
+        android:textColor="@color/red" 
+        custom:internalId="@+id/ComboboxTextboxIdLeft"
         />
     <org.tomshiro.ada.ComboBox
         android:id="@+id/Right_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
         android:layout_weight="0.8"
+        android:textColor="@color/green"
         custom:internalId="@+id/ComboboxTextboxIdRight"
         />
         
@@ -42,7 +44,9 @@
     	    android:layout_width="fill_parent"
     	    android:layout_height="wrap_content"
     	    android:layout_weight="0.5"
-    	    android:textAppearance="?android:attr/textAppearanceLarge" 
+    	    android:textAppearance="?android:attr/textAppearanceLarge"
+    	    android:textStyle="bold"
+    	    android:textColor="@color/red" 
     	/>
     	    	
     	 <TextView
@@ -50,7 +54,9 @@
     	     android:layout_width="fill_parent"
     	     android:layout_height="wrap_content"
     	     android:layout_weight="0.2"
-    	     android:textAppearance="?android:attr/textAppearanceLarge" />
+    	     android:textStyle="bold"
+    	     android:textAppearance="?android:attr/textAppearanceLarge" 
+    	 	 android:textColor="@color/green"
     	     />    	     
 	</TableRow>
      
@@ -65,7 +71,9 @@
 			    android:layout_height="wrap_content"
 			    android:layout_weight="0.5"
 			    android:text="@string/scorebuttonlabel"
-			    
+			    android:button="@drawable/left_checkbox_selector"
+			    android:textColor="@color/red"
+			    android:textStyle="bold"
 			    />
 
             <CheckBox
@@ -74,7 +82,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="@string/scorebuttonlabel"
-                                
+                android:button="@drawable/right_checkbox_selector"
+                android:textColor="@color/green"
+                android:textStyle="bold"
                 />
 
         </TableRow>
@@ -111,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
                 android:text="@string/commitbuttonlabel"
+                android:textStyle="bold"
                 android:onClick="onCommitClick" />
             
 			<Button
@@ -119,6 +130,7 @@
 			    android:layout_height="wrap_content"
 			    android:layout_weight="0.5"
 			    android:text="@string/clearbuttonlabel"
+			    android:textStyle="bold"
 			    android:onClick="onClearClick" />
 			
 		            

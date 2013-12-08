@@ -6,4 +6,6 @@
     <item name="ViewTypeTag" type="id"/>
     <item name="SubmitButton" type="id"/>
     <item name="QuitButton" type="id"/>
+    <item name="interval_value_start" type="id"/>
+    <item name="should_be_quoted" type="id"/>
 </resources>

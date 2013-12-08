@@ -10,7 +10,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.util.Log;
 import android.content.*;
-import android.app.AlertDialog;
 import java.io.*;
 import java.util.ArrayList;
 import android.widget.LinearLayout;
@@ -19,6 +18,7 @@ import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.EditText;
 import android.widget.AbsSpinner;
 import android.widget.Adapter;
 import android.widget.TimePicker;
@@ -79,7 +79,6 @@ public class ReportSetupActivity extends Activity implements OnClickListener {
 		Log.d(TAG,"getInputViewFromLayout: r="+r);
 		View retVal=null;
 		Integer vType;
-		String vName;
 		int ii = 0;
 		
 		while (ii<r.getChildCount())
@@ -136,28 +135,40 @@ public class ReportSetupActivity extends Activity implements OnClickListener {
 			inptValue = Integer.parseInt(getSpinnerContents(inputView));
 		case ViewTypeParser.InputFencerView:
 		case ViewTypeParser.InputActionView:
+		case ViewTypeParser.InputIdView:
 			inptValue = getSpinnerContents(inputView);
 			break;
-		case ViewTypeParser.InputDurationView:
-			inptValue = getDurationContents(inputView);
+		case ViewTypeParser.InputIntervalView:
+			inptValue = getIntervalContents(inputView);
+			break;
+		case ViewTypeParser.InputTextView:
+			inptValue = getTextViewContents(inputView);
 			break;
 		}
 		String valueName=(String)inputView.getTag(R.id.ViewNameTag);
 		retVal.put(valueName,inptValue);
 		return retVal;
 	}
-	/*
-	 * Durations are entered as HH:MM but stored as numbers of seconds.
-	 */
-	private Object getDurationContents(View durationView)
+	private Object getTextViewContents(View theView)
 	{
-		Object retVal= null;
-		TimePicker thePicker = (TimePicker)durationView;
+		String retVal=null;
+		Boolean should_quote=(Boolean)theView.getTag(R.id.should_be_quoted);
 		
-		Integer myRetVal= thePicker.getCurrentHour() * 3600;
-		myRetVal += thePicker.getCurrentMinute() * 60;
-				
-		retVal = myRetVal;
+		retVal=((EditText)theView).getText().toString();
+		if(true == should_quote)
+		{
+			retVal = "'"+retVal+"'";
+		}
+		return retVal;
+	}
+	/*
+	 * Intervals are always stored as numbers of seconds.
+	 */
+	private Object getIntervalContents(View theView)
+	{
+		Long retVal= null;		
+		retVal=((IntervalView)theView).getTotalSecs();
+		
 		return retVal;
 		
 	}

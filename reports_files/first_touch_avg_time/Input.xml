@@ -1,0 +1,7 @@
+<Screen>
+<Label type="Header" text="Average Time to First Touch By Fencer"/>
+
+<InputField type="Fencer" label="Fencer Name" seq="1" name="Fencername" />
+
+</Screen>
+

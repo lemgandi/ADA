@@ -29,7 +29,7 @@ public class InputActivity extends Activity {
 		
 		AlertDialog.Builder troubleDialogBuilder;
 		AdaDB myDbHelper;
-		int current_bout_id=0;
+		int current_bout_id=-1;
 		int touch_sequence = 0; // sqlite3 does not have sequences. Bummer.
 		static final String curBoutID="CurrentBoutID";
 		static final String curTouchSeq="CurrentTouchSequence";
@@ -37,9 +37,22 @@ public class InputActivity extends Activity {
 		static final String current_R = "currentRightScore";
 		
 		/*
-		 * Load a touch-type spinner from database.
+		 * Disable back button unless we are finished with a bout
 		 */
-		
+		public void onBackPressed()
+		{
+			if(-1 != current_bout_id)
+			{
+				this.troubleDialogBuilder.setTitle(R.string.AlreadyStartedTitle);
+				this.troubleDialogBuilder.setMessage(R.string.AlreadyStartedMessage);
+				AlertDialog alreadyStarted = this.troubleDialogBuilder.create();
+				alreadyStarted.show();
+			}
+			else
+			{
+				super.onBackPressed();
+			}
+		}
 		/*
 		 * Store off scores for redisplay.
 		 */
@@ -119,7 +132,7 @@ public class InputActivity extends Activity {
 				NameBox=findViewById(R.id.Right_name);
 				NameBox.setEnabled(true);
 		
-				current_bout_id = 0;
+				current_bout_id = -1;
 				touch_sequence = 0;
 			}
 		}
@@ -338,7 +351,7 @@ public class InputActivity extends Activity {
 		{
 			int status=0;
 			
-			if(0 == current_bout_id)
+			if(-1 == current_bout_id)
 			{
 				troubleDialogBuilder.setTitle(R.string.NoBoutTitle);
 				troubleDialogBuilder.setMessage(R.string.NoBoutMessage);

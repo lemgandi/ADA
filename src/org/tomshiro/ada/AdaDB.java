@@ -40,12 +40,14 @@ class AdaDB extends SQLiteOpenHelper {
 	public void closeBout(int bout_ID)
 	{
 		Log.d(TAG,"closeBout");
-		String boutUpdateSQL="update Bout set end_time = datetime('now') where " +
-				"_id = ?";
+		String boutUpdateSQL="update Bout set end_time = "
+				+ "(select committed_time from Touch where boutfk = ? order by committed_time DESC limit 1)" +
+				" where _id = ?";
 
 		SQLiteDatabase db=this.getWritableDatabase();
-		Integer[] boutIDValue = new Integer[1];
+		Integer[] boutIDValue = new Integer[2];
 		boutIDValue[0] = bout_ID;
+		boutIDValue[1] = bout_ID;
 		try {
 			db.execSQL(boutUpdateSQL,boutIDValue);
 		}
@@ -239,7 +241,7 @@ class AdaDB extends SQLiteOpenHelper {
 		}	
 		return retVal;		
 	}
-	
+
 	@Override
 	public void onCreate(SQLiteDatabase db)
 	{		

@@ -37,6 +37,7 @@ public class ViewFiller
 	
 	private void handleSpinner(Spinner v,int fillType)
 	{
+		
 		loadSpinner(v,selectSql[fillType]);
 	}
 	private void handleComboBox(ComboBox v,int fillType)
@@ -56,6 +57,20 @@ public class ViewFiller
 				handleComboBox((ComboBox)v,fillType);
 			
 			return v;
+	}
+	
+	public View fill_id_view(View v,String tableName,AdaDB Helper,Context theContext)
+	{
+	   if(null == myDbHelper)	
+		   myDbHelper = Helper;
+	   if(null == theContext)
+		   myContext = theContext;
+	   
+	   String table_id_select="select _id from "+tableName+" order by _id";
+	   
+	   loadSpinner((Spinner)v,table_id_select);
+	   
+	   return v;
 	}
 
 }

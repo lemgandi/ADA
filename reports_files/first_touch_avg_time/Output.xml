@@ -1,0 +1,8 @@
+<Screen>
+<Label type="Header" text="Average Time to First Touch" />
+<Label type="SubHeader" text="For %s">
+<Param seq="1" otype="String" ref="Fencername"/>
+</Label>
+
+<Label type="InfoHeader" text="Count|Min|Sec|Lost|Min|Sec"/>
+</Screen>

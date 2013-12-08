@@ -7,4 +7,18 @@
         <attr name="android:layout_weight"/>
         <attr name="internalId" format="integer|reference"/>
     </declare-styleable>
+    <declare-styleable name="IntervalView">
+        <attr name="android:id"/>
+        <attr name="android:layout_width"/>            
+        <attr name="android:layout_height"/>
+        <attr name="android:layout_weight"/>
+        <attr name="android:background"/>
+        <attr name="YearBoxId" format="integer|reference"/>
+        <attr name="MonthBoxId" format="integer|reference"/>
+        <attr name="WeekBoxId" format="integer|reference"/>
+        <attr name="DayBoxId" format="integer|reference"/>
+        <attr name="HourBoxId" format="integer|reference"/>
+		<attr name="MinBoxId" format="integer|reference"/>
+		<attr name="SecBoxId" format="integer|reference"/>	
+    </declare-styleable>
 </resources>

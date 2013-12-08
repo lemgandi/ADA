@@ -45,4 +45,13 @@
     <string name="title_activity_report_display">ReportDisplayActivity</string>
     <string name="hello_world">Hello world!</string>
 	<string name="No_Data">No Results Found.</string>
+	<string name="YearLabel">Years</string>
+    <string name="MonthLabel">Months</string>
+    <string name="WeekLabel">Weeks</string>
+    <string name="DayLabel">Days</string>
+    <string name="HourLabel">Hours</string>
+    <string name="MinuteLabel">Minutes</string>
+    <string name="SecondLabel">Seconds</string>
+    <string name="AlreadyStartedTitle">Bout Started</string>
+    <string name="AlreadyStartedMessage">Finish bout (context menu) to exit this screen.</string>
 </resources>
